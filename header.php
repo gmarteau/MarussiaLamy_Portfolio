@@ -33,4 +33,4 @@
             </nav>
         </header>
 
-        <main>
+        <main class="container-fluid">

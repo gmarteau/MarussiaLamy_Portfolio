@@ -6,6 +6,7 @@ function marussialamy_support() {
     add_theme_support('menus');
     register_nav_menu('header', 'Header menu');
     register_nav_menu('categories', 'Project categories menu');
+    register_nav_menu('social', 'Social media menu');
 }
 
 function marussialamy_register_assets() {

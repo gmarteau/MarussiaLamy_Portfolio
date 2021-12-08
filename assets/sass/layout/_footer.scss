@@ -1,0 +1,44 @@
+.footer {
+    &__contact {
+        font-size: 8rem;
+        border-top: solid 3px $clr-txt;
+        color: $clr-txt;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            color: $clr-txt;
+        }
+        &__line {
+            @include link-transition;
+            &:hover {
+                @include link-transition-hover;
+            }
+        }
+    }
+    &__social {
+        border-top: solid 3px $clr-txt;
+        &__socials {
+            &__list {
+                list-style: none;
+                display: flex;
+                &__item {
+                    &__link {
+                        color: $clr-txt;
+                        text-decoration: none;
+                        &:hover {
+                            color: $clr-txt;
+                        }
+                    }
+                }
+            }
+        }
+        &__email {
+            &__link {
+                @include link-transition;
+                &:hover {
+                    @include link-transition-hover;
+                }
+            }
+        }
+    }
+}

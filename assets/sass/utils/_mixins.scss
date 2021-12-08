@@ -1,0 +1,9 @@
+@mixin link-transition {
+    color: $clr-txt;
+    text-decoration: none;
+    transition: color $link-hover-transition ease-in-out;
+}
+
+@mixin link-transition-hover {
+    color: $clr-active;
+}

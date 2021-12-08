@@ -6,6 +6,9 @@ Description: Art Director and Graphic Designer Marussia Lamy's portfolio
 
 
 @import './utils/variables';
+@import './utils/mixins';
 @import './base/base';
 @import './base/typography';
 @import './layout/navbar';
+@import './layout/home';
+@import './layout/footer';

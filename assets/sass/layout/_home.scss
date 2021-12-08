@@ -1,0 +1,11 @@
+.home {
+    list-style: none;
+    &__category {
+        &__link {
+            @include link-transition;
+            &:hover {
+                @include link-transition-hover;
+            }
+        }
+    }
+}
