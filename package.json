@@ -1,0 +1,14 @@
+{
+  "name": "marussialamy",
+  "version": "1.0.0",
+  "description": "Scripts for marussialamy theme",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:./style.css"
+  },
+  "author": "Guillaume Marteau",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.44.0"
+  }
+}

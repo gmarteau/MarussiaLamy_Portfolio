@@ -3,7 +3,37 @@ Theme Name: Marussia Lamy Art Director
 Author: Guillaume Marteau
 Description: Art Director and Graphic Designer Marussia Lamy's portfolio
 */
+body {
+  box-sizing: border-box;
+  background-color: #6B7379;
+  color: #fff;
+}
+
+.main-wrapper {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 * {
-    font-family: 'Helvetica Neue LT Pro', Helvetica, sans-serif;
+  font-family: "Helvetica Neue LT Pro", Helvetica, sans-serif;
 }
+
+.navbar__brand {
+  color: #fff;
+}
+.navbar__brand:hover {
+  color: #fff;
+}
+.navbar__link {
+  color: #fff;
+}
+.navbar__link.active {
+  color: #9ca3a8;
+}
+.navbar__link:hover {
+  color: #9ca3a8;
+}
+
+/*# sourceMappingURL=style.css.map */

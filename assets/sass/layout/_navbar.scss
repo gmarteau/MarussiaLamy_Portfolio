@@ -1,0 +1,17 @@
+.navbar {
+    &__brand {
+        color: $clr-txt;
+        &:hover {
+            color: $clr-txt;
+        }
+    }
+    &__link {
+        color: $clr-txt;
+        &.active {
+            color: $clr-active;
+        }
+        &:hover {
+            color: $clr-active;
+        }
+    }
+}
