@@ -6,6 +6,7 @@
         }
     }
     &__link {
+        font-size: $font-reg;
         color: $clr-txt;
         &.active {
             color: $clr-active;

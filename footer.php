@@ -1,13 +1,16 @@
         </main>
 
         <footer class="container-fluid footer">
-            <a class="row footer__contact">
-                <p class="col-12 footer__contact__line">GET IN</p>
-                <p class="col-12 footer__contact__line">TOUCH</p>
-                <p class="col-12 footer__contact__line">WITH ME</p>
+            <a class="row footer__contact py-5" href="<?= get_page_link(get_page_by_title('contact')); ?>">
+                <p class="col-12 footer__contact__line footer__contact__line--1 m-0">GET IN</p>
+                <p class="col-12 footer__contact__line footer__contact__line--2 m-0">TOUCH</p>
+                <p class="col-12 footer__contact__line footer__contact__line--3 m-0">WITH ME</p>
+                <div class="footer__contact__cta">
+                    Contact
+                </div>
             </a>
 
-            <div class="row footer__social">
+            <div class="row footer__social py-3">
                 <div class="col-9 footer__social__socials">
                     <p>Réseaux sociaux</p>
                     <ul class="p-0 footer__social__socials__list">

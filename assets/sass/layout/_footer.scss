@@ -1,21 +1,54 @@
 .footer {
     &__contact {
-        font-size: 8rem;
         border-top: solid 3px $clr-txt;
         color: $clr-txt;
         text-decoration: none;
+        position: relative;
         &:hover {
             cursor: pointer;
             color: $clr-txt;
         }
         &__line {
+            font-size: $font-huge;
+            line-height: .8;
+            width: max-content;
             @include link-transition;
             &:hover {
                 @include link-transition-hover;
             }
+            &--1 {
+                transform: translateX(20%);
+            }
+            &--2 {
+                transform: translateX(0);
+            }
+            &--3 {
+                transform: translateX(10%);
+            }
+        }
+        &__cta {
+            width: $contact-cta-size;
+            height: $contact-cta-size;
+            border-radius: 50%;
+            position: absolute;
+            right: $contact-cta-size;
+            bottom: $contact-cta-size + 100px;
+            background-color: $clr-elements;
+            color: $clr-txt-dark;
+            font-size: $font-reg;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all $link-hover-transition ease-in-out;
+            animation: rotate 5s linear infinite;
+            &:hover {
+                background-color: $clr-txt-dark;
+                color: $clr-txt;
+            }
         }
     }
     &__social {
+        font-size: $font-small;
         border-top: solid 3px $clr-txt;
         &__socials {
             &__list {

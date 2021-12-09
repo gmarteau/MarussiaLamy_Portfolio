@@ -3,6 +3,14 @@ Theme Name: Marussia Lamy Art Director
 Author: Guillaume Marteau
 Description: Art Director and Graphic Designer Marussia Lamy's portfolio
 */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   box-sizing: border-box;
   background-color: #6B7379;
@@ -14,6 +22,7 @@ body {
   padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  overflow-x: hidden;
 }
 
 * {
@@ -27,6 +36,7 @@ body {
   color: #fff;
 }
 .navbar__link {
+  font-size: 1.2rem;
   color: #fff;
 }
 .navbar__link.active {
@@ -38,27 +48,60 @@ body {
 
 .home {
   list-style: none;
+  position: relative;
+}
+.home__category:hover > .home__category__link {
+  color: #9ca3a8;
+}
+.home__category:hover > .home__category__link > p {
+  transform: translateX(25%);
+}
+.home__category:hover > .home__category__img {
+  opacity: 1;
+  transform: translateX(-25%);
 }
 .home__category__link {
+  font-size: 5rem;
   color: #fff;
   text-decoration: none;
   transition: color 150ms ease-in-out;
 }
-.home__category__link:hover {
-  color: #9ca3a8;
+.home__category__link__content {
+  transform: translateX(0);
+  transform-origin: left;
+  transition: transform 150ms ease-in-out;
+}
+.home__category__img {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 30%;
+  height: 90%;
+  opacity: 0;
+  transform: translateX(0);
+  transform-origin: right;
+  transition: all 150ms ease-in-out;
+}
+.home__category__img__pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer__contact {
-  font-size: 8rem;
   border-top: solid 3px #fff;
   color: #fff;
   text-decoration: none;
+  position: relative;
 }
 .footer__contact:hover {
   cursor: pointer;
   color: #fff;
 }
 .footer__contact__line {
+  font-size: 19rem;
+  line-height: 0.8;
+  width: max-content;
   color: #fff;
   text-decoration: none;
   transition: color 150ms ease-in-out;
@@ -66,7 +109,37 @@ body {
 .footer__contact__line:hover {
   color: #9ca3a8;
 }
+.footer__contact__line--1 {
+  transform: translateX(20%);
+}
+.footer__contact__line--2 {
+  transform: translateX(0);
+}
+.footer__contact__line--3 {
+  transform: translateX(10%);
+}
+.footer__contact__cta {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  right: 150px;
+  bottom: 250px;
+  background-color: #dbff00;
+  color: #242424;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 150ms ease-in-out;
+  animation: rotate 5s linear infinite;
+}
+.footer__contact__cta:hover {
+  background-color: #242424;
+  color: #fff;
+}
 .footer__social {
+  font-size: 1rem;
   border-top: solid 3px #fff;
 }
 .footer__social__socials__list {

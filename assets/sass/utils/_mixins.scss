@@ -7,3 +7,31 @@
 @mixin link-transition-hover {
     color: $clr-active;
 }
+
+@mixin home-link-transition {
+    transform: translateX(0);
+    transform-origin: left;
+    transition: transform $link-hover-transition ease-in-out;
+}
+
+@mixin home-link-transition-hover {
+    transform: translateX(25%);
+}
+
+@mixin home-img-show-transition {
+    opacity: 0;
+    transform: translateX(0);
+    transform-origin: right;
+    transition: all $link-hover-transition ease-in-out;
+}
+
+@mixin home-img-show-transition-hover {
+    opacity: 1;
+    transform: translateX(-25%);
+}
+
+@mixin img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
