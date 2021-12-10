@@ -25,7 +25,7 @@
                             foreach ($menuItems as $menuItem) :
                                 $isActivePage = $menuItem->url === get_permalink() ? true : false;
                             ?>
-                                <a class="nav-link navbar__link <?= $isActivePage ? 'active' : ''; ?>" <?= $isActivePage ? 'aria-current="page"' : ''; ?>  href="<?= $menuItem->url; ?>"><?= $menuItem->title; ?></a>
+                                <a class="nav-link ms-4 navbar__link <?= $isActivePage ? 'active' : ''; ?>" <?= $isActivePage ? 'aria-current="page"' : ''; ?>  href="<?= $menuItem->url; ?>"><?= $menuItem->title; ?></a>
                             <?php endforeach; endif; ?>
                         </div>
                     </div>

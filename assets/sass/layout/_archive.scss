@@ -1,0 +1,41 @@
+.archive {
+    &__hero {
+        border-bottom: solid 3px $clr-txt;
+        &__title {
+            height: 300px;
+            & > h1 {
+                font-size: $font-title;
+            }
+        }
+        &__links {
+            &__link {
+                @include link-transition;
+                font-size: $font-reg;
+                &:hover {
+                    @include link-transition-hover;
+                }
+            }
+        }
+    }
+    &__grid {
+        &__project {
+            height: 600px;
+            &__thumbnail {
+                height: 100%;
+                order: 2;
+                &.odd {
+                    order: 1;
+                }
+                &__img {
+                    @include img-cover;
+                }
+            }
+            &__info {
+                order: 1;
+                &.odd {
+                    order: 2;
+                }
+            }
+        }
+    }
+}

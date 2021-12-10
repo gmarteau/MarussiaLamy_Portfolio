@@ -9,7 +9,7 @@
     ?>
         <li class="col-12 home__category">
             <a class="home__category__link h1 m-0" href="<?= $category->url; ?>">
-                <p class="home__category__link__content">
+                <p class="home__category__link__content m-0">
                     <?= $category->title; ?>
                 </p>
             </a>

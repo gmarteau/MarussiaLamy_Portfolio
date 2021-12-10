@@ -22,10 +22,10 @@
         }
         &__img {
             position: absolute;
-            top: 50px;
+            top: 0;
             right: 0;
             width: 30%;
-            height: 90%;
+            height: 100%;
             @include home-img-show-transition;
             &__pic {
                 @include img-cover;

@@ -44,7 +44,7 @@ function marussialamy_init() {
         'show_in_rest' => true,
         'has_archive' => true,
         'rewrite' => [
-            'slug' => 'portfolio'
+            'slug' => 'projets'
         ]
     ]);
     register_taxonomy('skill', 'project', [
@@ -66,7 +66,7 @@ function marussialamy_init() {
         'hierarchical' => true,
         'show_admin_column' => true,
         'rewrite' => [
-            'slug' => 'skill'
+            'slug' => 'portfolio'
         ]
     ]);
 }
