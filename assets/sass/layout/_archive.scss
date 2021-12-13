@@ -24,14 +24,39 @@
         &__project {
             height: 800px;
             &__thumbnail {
-                height: 110%;
-                transform: translateY(-5%);
                 order: 2;
+                height: 100%;
+                &__container {
+                    height: 110%;
+                    transform: translateY(-5%);
+                    overflow: hidden;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: $clr-bg;
+                        opacity: 0;
+                        transition: opacity $link-hover-transition ease-in-out;
+                    }
+                    &:hover {
+                        &::after {
+                            opacity: .2;
+                        }
+                        & > img {
+                            @include archive-img-transition-hover;
+                        }
+                    }    
+                }
                 &.odd {
                     order: 1;
                 }
                 &__img {
                     @include img-cover;
+                    @include archive-img-transition;
                 }
             }
             &__info {
@@ -47,6 +72,7 @@
                 }
                 &__link {
                     font-size: $font-small;
+                    width: max-content;
                     @include archive-link-transition;
                     &:hover {
                         @include archive-link-transition-hover;

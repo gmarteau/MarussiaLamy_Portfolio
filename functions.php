@@ -35,7 +35,7 @@ function marussialamy_init() {
             'update_item' => 'Mettre à jour le projet',
             'add_new_item' => 'Ajouter un nouveau projet',
             'new_item_name' => 'Nouveau projet',
-            'menu_name' => 'Projet',
+            'menu_name' => 'Projets',
             'not_found' => 'Pas de projet trouvé'
         ],
         'description' => 'Projet de design',
@@ -61,7 +61,7 @@ function marussialamy_init() {
             'update_item' => 'Mettre à jour skill',
             'add_new_item' => 'Ajouter une nouvelle skill',
             'new_item_name' => 'Nouvelle skill',
-            'menu_name' => 'Skill',
+            'menu_name' => 'Skills',
             'not_found' => 'Pas de skill trouvée'
         ],
         'public' => true,

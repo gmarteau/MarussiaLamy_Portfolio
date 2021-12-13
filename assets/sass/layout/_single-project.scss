@@ -1,0 +1,48 @@
+.project {
+    &__hero {
+        border-bottom: solid 3px $clr-txt;
+        &__title {
+            font-size: $font-title;
+        }
+        &__thumbnail {
+            height: 800px;
+            &__img {
+                @include img-cover;
+            }
+        }
+    }
+    &__info {
+        border-bottom: solid 3px $clr-txt;
+        &__client {
+            font-size: $font-reg;
+        }
+        &__subtitle {
+            font-size: $font-title;
+        }
+    }
+    &__details {
+        border-bottom: solid 3px $clr-txt;
+        &__description {
+            font-size: $font-big;
+            line-height: 1;
+        }
+        &__list {
+            border-top: solid 3px $clr-txt;
+            list-style: none;
+            font-size: $font-reg;
+            &__item {
+                &:not(.last) {
+                    border-bottom: solid 1px $clr-txt;
+                }
+            }
+        }
+    }
+    &__gallery {
+        &__image {
+            height: 700px;
+            &__img {
+                @include img-cover;
+            }
+        }
+    }
+}

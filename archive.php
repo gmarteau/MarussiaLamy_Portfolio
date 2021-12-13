@@ -28,7 +28,9 @@
             <?php $isOdd = ($i%2 !== 0) ? true : false; ?>
             <div class="col-12 archive__grid__project d-flex">
                 <div class="col-6 archive__grid__project__thumbnail <?= $isOdd ? 'odd pe-5' : 'ps-5'; ?>">
-                    <?php the_post_thumbnail('archive-thumbnail', ['class' => 'archive__grid__project__thumbnail__img']); ?>
+                    <a href="<?= get_permalink(); ?>" class="d-block archive__grid__project__thumbnail__container">
+                        <?php the_post_thumbnail('archive-thumbnail', ['class' => 'archive__grid__project__thumbnail__img']); ?>
+                    </a>
                 </div>
                 <div class="col-6 d-flex flex-column justify-content-center archive__grid__project__info <?= $isOdd ? 'odd ps-5' : 'pe-5'; ?>">
                     <p class="archive__grid__project__info__client my-2"><?= get_field('client'); ?></p>
