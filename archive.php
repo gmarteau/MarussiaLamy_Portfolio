@@ -3,11 +3,11 @@
 <?php require_once('inc/archive-header-content.php'); ?>
 
 <div class="row archive__hero py-3">
-    <div class="col-12 archive__hero__title d-flex justify-content-center align-items-center">
+    <div class="col-12 archive__hero__title d-flex justify-content-center align-items-center px-0">
         <h1><?= $title ?></h1>
     </div>
 
-    <div class="col-12 archive__hero__links d-flex">
+    <div class="col-12 archive__hero__links d-flex px-0">
         <div class="col-6 d-flex justify-content-start">
             <a class="archive__hero__links__link d-flex align-items-center" href="<?= get_term_link($firstDifferentSkill); ?>">
                 <i class="fas fa-arrow-left fa-lg me-2"></i><?= $firstDifferentSkill->name ?>
@@ -26,7 +26,7 @@
         <?php $i = 1; ?>
         <?php while (have_posts()) : the_post() ?>
             <?php $isOdd = ($i%2 !== 0) ? true : false; ?>
-            <div class="col-12 archive__grid__project d-flex">
+            <div class="col-12 archive__grid__project d-flex px-0">
                 <div class="col-6 archive__grid__project__thumbnail <?= $isOdd ? 'odd pe-5' : 'ps-5'; ?>">
                     <a href="<?= get_permalink(); ?>" class="d-block archive__grid__project__thumbnail__container">
                         <?php the_post_thumbnail('archive-thumbnail', ['class' => 'archive__grid__project__thumbnail__img']); ?>

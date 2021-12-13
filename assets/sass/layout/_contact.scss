@@ -1,0 +1,33 @@
+.contact {
+    &__title {
+        border-bottom: solid 3px $clr-txt;
+        &__text {
+            font-size: $font-huge;
+        }
+    }
+    &__taglines {
+        font-size: $font-reg;
+    }
+    &__option {
+        border-bottom: solid 3px $clr-txt;
+        &__link {
+            font-size: $font-huge*.75;
+            color: $clr-txt;
+            text-decoration: none;
+            @include contact-link-transition;
+            &:hover {
+                color: $clr-txt;
+                @include contact-link-transition-hover;
+            }
+        }
+    }
+    &__social {
+        border-bottom: solid 3px $clr-txt;
+        &__title {
+            font-size: $font-reg;
+        }
+        &__list {
+            list-style: none;
+        }
+    }
+}

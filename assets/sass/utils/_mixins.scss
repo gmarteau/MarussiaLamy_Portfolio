@@ -15,7 +15,7 @@
 }
 
 @mixin home-link-transition-hover {
-    transform: translateX(25%);
+    transform: translateX(15%);
 }
 
 @mixin archive-link-transition {
@@ -56,4 +56,14 @@
 
 @mixin archive-img-transition-hover {
     transform: scale(1.1);
+}
+
+@mixin contact-link-transition {
+    transform: translateX(0);
+    transform-origin: left;
+    transition: transform $link-hover-transition ease-in-out;
+}
+
+@mixin contact-link-transition-hover {
+    transform: translateX(1.5%);
 }

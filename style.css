@@ -54,7 +54,7 @@ body {
   color: #9ca3a8;
 }
 .home__category:hover > .home__category__link > p {
-  transform: translateX(25%);
+  transform: translateX(15%);
 }
 .home__category:hover > .home__category__img {
   opacity: 1;
@@ -64,12 +64,12 @@ body {
   font-size: 5rem;
   color: #fff;
   text-decoration: none;
-  transition: color 150ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 .home__category__link__content {
   transform: translateX(0);
   transform-origin: left;
-  transition: transform 150ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 .home__category__img {
   position: absolute;
@@ -80,7 +80,7 @@ body {
   opacity: 0;
   transform: translateX(0);
   transform-origin: right;
-  transition: all 150ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 .home__category__img__pic {
   width: 100%;
@@ -104,7 +104,7 @@ body {
   width: max-content;
   color: #fff;
   text-decoration: none;
-  transition: color 150ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 .footer__contact__line:hover {
   color: #9ca3a8;
@@ -131,7 +131,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 150ms ease-in-out;
+  transition: all 250ms ease-in-out;
   animation: rotate 5s linear infinite;
 }
 .footer__contact__cta:hover {
@@ -156,7 +156,7 @@ body {
 .footer__social__email__link {
   color: #fff;
   text-decoration: none;
-  transition: color 150ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 .footer__social__email__link:hover {
   color: #9ca3a8;
@@ -174,7 +174,7 @@ body {
 .archive__hero__links__link {
   color: #fff;
   text-decoration: none;
-  transition: color 150ms ease-in-out;
+  transition: color 250ms ease-in-out;
   font-size: 1.2rem;
   width: max-content;
 }
@@ -207,7 +207,7 @@ body {
   right: 0;
   background-color: #6B7379;
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 }
 .archive__grid__project__thumbnail__container:hover::after {
   opacity: 0.2;
@@ -244,7 +244,7 @@ body {
   transform-origin: left;
   color: #fff;
   text-decoration: none;
-  transition: all 150ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 .archive__grid__project__info__link:hover {
   color: #9ca3a8;
@@ -296,6 +296,40 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.contact__title {
+  border-bottom: solid 3px #fff;
+}
+.contact__title__text {
+  font-size: 19rem;
+}
+.contact__taglines {
+  font-size: 1.2rem;
+}
+.contact__option {
+  border-bottom: solid 3px #fff;
+}
+.contact__option__link {
+  font-size: 14.25rem;
+  color: #fff;
+  text-decoration: none;
+  transform: translateX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in-out;
+}
+.contact__option__link:hover {
+  color: #fff;
+  transform: translateX(1.5%);
+}
+.contact__social {
+  border-bottom: solid 3px #fff;
+}
+.contact__social__title {
+  font-size: 1.2rem;
+}
+.contact__social__list {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

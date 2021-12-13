@@ -12,7 +12,7 @@
     <div class="main-wrapper container-fluid">
         <header>
             <nav class="navbar navbar-expand-lg bg-transparent">
-                <div class="container-fluid">
+                <div class="container-fluid px-0">
                     <a class="navbar-brand navbar__brand" href="<?= get_home_url(); ?>">maru</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
