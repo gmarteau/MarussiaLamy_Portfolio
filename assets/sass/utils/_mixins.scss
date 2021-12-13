@@ -18,6 +18,19 @@
     transform: translateX(25%);
 }
 
+@mixin archive-link-transition {
+    transform: translateX(0);
+    transform-origin: left;
+    color: $clr-txt;
+    text-decoration: none;
+    transition: all $link-hover-transition ease-in-out;
+}
+
+@mixin archive-link-transition-hover {
+    color: $clr-active;
+    transform: translateX(5%);
+}
+
 @mixin home-img-show-transition {
     opacity: 0;
     transform: translateX(0);

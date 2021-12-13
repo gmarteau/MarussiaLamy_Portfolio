@@ -176,15 +176,21 @@ body {
   text-decoration: none;
   transition: color 150ms ease-in-out;
   font-size: 1.2rem;
+  width: max-content;
 }
 .archive__hero__links__link:hover {
   color: #9ca3a8;
 }
+.archive__grid {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 .archive__grid__project {
-  height: 600px;
+  height: 800px;
 }
 .archive__grid__project__thumbnail {
-  height: 100%;
+  height: 110%;
+  transform: translateY(-5%);
   order: 2;
 }
 .archive__grid__project__thumbnail.odd {
@@ -200,6 +206,24 @@ body {
 }
 .archive__grid__project__info.odd {
   order: 2;
+}
+.archive__grid__project__info__client {
+  font-size: 1.2rem;
+}
+.archive__grid__project__info__title {
+  font-size: 3.4rem;
+}
+.archive__grid__project__info__link {
+  font-size: 1rem;
+  transform: translateX(0);
+  transform-origin: left;
+  color: #fff;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+.archive__grid__project__info__link:hover {
+  color: #9ca3a8;
+  transform: translateX(5%);
 }
 
 /*# sourceMappingURL=style.css.map */

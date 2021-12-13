@@ -12,7 +12,9 @@ foreach ($skills as $skill) {
 $otherSkills = get_terms([
     'taxonomy' => 'skill',
     'exclude' => $currentSkillId,
-    'number' => 2
 ]);
-$firstDifferentSkill = $otherSkills[0];
-$secondDifferentSkill = $otherSkills[1];
+$maxIndex = count($otherSkills) - 1;
+$firstIndex = rand(0, $maxIndex);
+while (($secondIndex = rand(0, $maxIndex)) === $firstIndex);
+$firstDifferentSkill = $otherSkills[$firstIndex];
+$secondDifferentSkill = $otherSkills[$secondIndex];

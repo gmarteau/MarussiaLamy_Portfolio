@@ -11,6 +11,7 @@
             &__link {
                 @include link-transition;
                 font-size: $font-reg;
+                width: max-content;
                 &:hover {
                     @include link-transition-hover;
                 }
@@ -18,10 +19,13 @@
         }
     }
     &__grid {
+        padding-top: $archive-grid-padding;
+        padding-bottom: $archive-grid-padding;
         &__project {
-            height: 600px;
+            height: 800px;
             &__thumbnail {
-                height: 100%;
+                height: 110%;
+                transform: translateY(-5%);
                 order: 2;
                 &.odd {
                     order: 1;
@@ -34,6 +38,19 @@
                 order: 1;
                 &.odd {
                     order: 2;
+                }
+                &__client {
+                    font-size: $font-reg;
+                }
+                &__title {
+                    font-size: $font-big;
+                }
+                &__link {
+                    font-size: $font-small;
+                    @include archive-link-transition;
+                    &:hover {
+                        @include archive-link-transition-hover;
+                    }
                 }
             }
         }
