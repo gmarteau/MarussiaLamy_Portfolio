@@ -91,7 +91,8 @@ body {
   transform: translateX(-25%);
 }
 .home__category__link {
-  font-size: 5rem;
+  font-size: 6.5vw;
+  line-height: 1;
   color: #fff;
   text-decoration: none;
   transition: color 250ms ease-in-out;
@@ -129,7 +130,7 @@ body {
   color: #fff;
 }
 .footer__contact__line {
-  font-size: 19rem;
+  font-size: 20vw;
   line-height: 0.8;
   width: max-content;
   color: #fff;
@@ -199,7 +200,7 @@ body {
   height: 300px;
 }
 .archive__hero__title > h1 {
-  font-size: 5rem;
+  font-size: 14.3vw;
 }
 .archive__hero__links__link {
   color: #fff;
@@ -288,7 +289,7 @@ body {
   border-bottom: solid 3px #fff;
 }
 .project__hero__title {
-  font-size: 5rem;
+  font-size: 6.5vw;
 }
 .project__hero__thumbnail {
   height: 800px;
@@ -305,7 +306,8 @@ body {
   font-size: 1.2rem;
 }
 .project__info__subtitle {
-  font-size: 5rem;
+  font-size: 6.5vw;
+  line-height: 1;
 }
 .project__details {
   border-bottom: solid 3px #fff;
@@ -322,6 +324,9 @@ body {
 .project__details__list__item:not(.last) {
   border-bottom: solid 1px #fff;
 }
+.project__gallery {
+  border-bottom: solid 3px #fff;
+}
 .project__gallery__image {
   height: 700px;
 }
@@ -330,12 +335,25 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.project__others__title {
+  font-size: 6.5vw;
+  border-bottom: solid 3px #fff;
+}
+.project__others__links__link {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+.project__others__links__link:hover {
+  color: #9ca3a8;
+}
 
 .contact__title {
   border-bottom: solid 3px #fff;
 }
 .contact__title__text {
-  font-size: 19rem;
+  font-size: 26.4vw;
 }
 .contact__taglines {
   font-size: 1.2rem;
@@ -344,7 +362,7 @@ body {
   border-bottom: solid 3px #fff;
 }
 .contact__option__link {
-  font-size: 14.25rem;
+  font-size: 15vw;
   color: #fff;
   text-decoration: none;
   transform: translateX(0);
@@ -372,7 +390,7 @@ body {
   border-bottom: solid 3px #fff;
 }
 .about__hero__title {
-  font-size: 19rem;
+  font-size: 22.7vw;
   z-index: 1;
 }
 .about__hero__thumbnail {
@@ -390,14 +408,14 @@ body {
   object-fit: cover;
 }
 .about__hero__name {
-  font-size: 19rem;
+  font-size: 23vw;
   z-index: 1;
 }
 .about__tagline {
   border-bottom: solid 3px #fff;
 }
 .about__tagline__content {
-  font-size: 5rem;
+  font-size: 6.5vw;
   line-height: 1;
 }
 .about__description {

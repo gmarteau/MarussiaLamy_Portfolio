@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post() ?>
-    <div class="row contact__title py-5">
+    <div class="row contact__title pb-5">
         <h1 class="col contact__title__text text-center px-0"><?= get_the_title(); ?></h1>
     </div>
 

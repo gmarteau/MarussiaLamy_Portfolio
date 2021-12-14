@@ -15,6 +15,7 @@
         }
         &__link {
             font-size: $font-title;
+            line-height: 1;
             @include link-transition;
             &__content {
                 @include home-link-transition;

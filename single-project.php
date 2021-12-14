@@ -47,6 +47,29 @@
         </div>
     <?php endif; endforeach; endif; ?>
     </div>
+
+    <div class="row project__others py-5">
+        <h3 class="col-12 project__others__title px-0 py-5 mt-5">Voir d'autres projets</h3>
+        <div class="col-12 project__others__links px-0 py-5 d-flex">
+            <?php
+            $query = new WP_Query([
+                'post_type' => 'project',
+                'post__not_in' => [get_the_ID()],
+                'posts_per_page' => 2
+            ]);
+            $i = 1;
+            while ($query->have_posts()) : $query->the_post();
+            ?>
+            <a href="<?= get_permalink(); ?>" class="col-6 project__others__links__link d-block mt-5 text-<?= ($i === 1) ? 'start' : 'end'; ?>">
+                <?= get_the_title(); ?>
+            </a>
+            <?php $i++; ?>
+            <?php
+            endwhile;
+            wp_reset_postdata();
+            ?>
+        </div>
+    </div>
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
