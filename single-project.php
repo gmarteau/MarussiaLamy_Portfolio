@@ -40,12 +40,12 @@
     <div class="row project__gallery py-5">
     <?php
     $images = get_field('gallery');
-    if ($images) : foreach ($images as $image) :
+    if ($images) : foreach ($images as $image) : if ($image) :
     ?>
         <div class="col-12 project__gallery__image my-4 px-0">
             <img src="<?= $image['sizes']['large'] ?>" alt="<?= $image['alt'] ?>" class="project__gallery__image__img" />
         </div>
-    <?php endforeach; endif; ?>
+    <?php endif; endforeach; endif; ?>
     </div>
 <?php endwhile; ?>
 
