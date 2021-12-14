@@ -36,7 +36,7 @@
                     <p class="archive__grid__project__info__client my-2"><?= get_field('client'); ?></p>
                     <h2 class="archive__grid__project__info__title my-2"><?= get_the_title(); ?></h2>
                     <a class="archive__grid__project__info__link my-2 d-flex align-items-center" href="<?= get_permalink(); ?>">
-                        <i class="fas fa-arrow-right fa-2x me-3"></i>Voir le projet
+                        <span class="round-cta--small me-3"><i class="fas fa-arrow-right"></i></span>Voir le projet
                     </a>
                 </div>
             </div>

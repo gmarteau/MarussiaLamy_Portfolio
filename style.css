@@ -20,7 +20,7 @@ body {
 .main-wrapper {
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   overflow-x: hidden;
 }
@@ -29,6 +29,36 @@ body {
   font-family: "Helvetica Neue LT Pro", Helvetica, sans-serif;
 }
 
+.round-cta {
+  background-color: #fff;
+  color: #242424;
+  border-radius: 50%;
+  transition: all 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-size: 3.4rem;
+}
+.round-cta--small {
+  background-color: #fff;
+  color: #242424;
+  border-radius: 50%;
+  transition: all 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
 .navbar__brand {
   color: #fff;
 }
@@ -244,11 +274,14 @@ body {
   transform-origin: left;
   color: #fff;
   text-decoration: none;
-  transition: all 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 .archive__grid__project__info__link:hover {
-  color: #9ca3a8;
+  color: #fff;
   transform: translateX(15%);
+}
+.archive__grid__project__info__link:hover > .round-cta--small {
+  background-color: #dbff00;
 }
 
 .project__hero {
@@ -321,6 +354,9 @@ body {
 .contact__option__link:hover {
   color: #fff;
   transform: translateX(1.5%);
+}
+.contact__option__link:hover > .round-cta {
+  background-color: #dbff00;
 }
 .contact__social {
   border-bottom: solid 3px #fff;

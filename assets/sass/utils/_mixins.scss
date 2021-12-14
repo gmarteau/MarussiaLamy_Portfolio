@@ -23,11 +23,11 @@
     transform-origin: left;
     color: $clr-txt;
     text-decoration: none;
-    transition: all $link-hover-transition ease-in-out;
+    transition: transform $link-hover-transition ease-in-out;
 }
 
 @mixin archive-link-transition-hover {
-    color: $clr-active;
+    color: $clr-txt;
     transform: translateX(15%);
 }
 
@@ -66,4 +66,23 @@
 
 @mixin contact-link-transition-hover {
     transform: translateX(1.5%);
+}
+
+@mixin round-cta($size: 'med') {
+    background-color: $clr-txt;
+    color: $clr-txt-dark;
+    border-radius: 50%;
+    transition: all $link-hover-transition ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @if ($size == 'small') {
+        width: $cta-small-size;
+        height: $cta-small-size;
+        font-size: $font-reg;        
+    } @else {
+        width: $cta-med-size;
+        height: $cta-med-size;
+        font-size: $font-big;
+    }
 }

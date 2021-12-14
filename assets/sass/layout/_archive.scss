@@ -76,6 +76,9 @@
                     @include archive-link-transition;
                     &:hover {
                         @include archive-link-transition-hover;
+                        & > .round-cta--small {
+                            background-color: $clr-elements;
+                        }
                     }
                 }
             }

@@ -11,7 +11,7 @@
 <body>
     <div class="main-wrapper container-fluid">
         <header>
-            <nav class="navbar navbar-expand-lg bg-transparent">
+            <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
                 <div class="container-fluid px-0">
                     <a class="navbar-brand navbar__brand" href="<?= get_home_url(); ?>">maru</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,4 +33,4 @@
             </nav>
         </header>
 
-        <main class="container-fluid">
+        <main class="container-fluid mt-5 pt-5">

@@ -7,7 +7,7 @@
     if ($categories) : 
     foreach ($categories as $category) :
     ?>
-        <li class="col-12 home__category">
+        <li class="col-12 home__category px-0">
             <a class="home__category__link h1 m-0" href="<?= $category->url; ?>">
                 <p class="home__category__link__content m-0">
                     <?= $category->title; ?>

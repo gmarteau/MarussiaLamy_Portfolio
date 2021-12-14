@@ -11,8 +11,8 @@
     </div>
 
     <div class="row contact__option">
-        <a href="mailto:<?= get_option('admin_email') ?>" class="col-12 contact__option__link p-0 d-flex justify-content-between align-items-baseline">
-            Email<i class="fas fa-arrow-right fa-xs"></i>
+        <a href="mailto:<?= get_option('admin_email') ?>" class="col-12 contact__option__link p-0 d-flex justify-content-between align-items-center">
+            Email<span class="round-cta"><i class="fas fa-arrow-right"></i></span>
         </a>
     </div>
 
@@ -26,8 +26,8 @@
         if ($socials) : foreach ($socials as $social) :
         ?>
         <li class="col-12 contact__option p-0">
-            <a href="<?= $social->url; ?>" class="col-12 contact__option__link p-0 d-flex justify-content-between align-items-baseline">
-                <?= $social->title; ?><i class="fas fa-arrow-right fa-xs"></i>
+            <a href="<?= $social->url; ?>" class="col-12 contact__option__link p-0 d-flex justify-content-between align-items-center">
+                <?= $social->title; ?><span class="round-cta"><i class="fas fa-arrow-right"></i></span>
             </a>
         </li>
         <?php endforeach; endif; ?>
