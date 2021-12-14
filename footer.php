@@ -1,7 +1,7 @@
         </main>
 
         <?php if (!is_page('contact')) : ?>
-        <footer class="container-fluid footer px-0">
+        <footer class="container-fluid footer">
             <a class="row footer__contact py-5" href="<?= get_page_link(get_page_by_title('contact')); ?>">
                 <p class="col-12 footer__contact__line footer__contact__line--1 m-0 px-0">GET IN</p>
                 <p class="col-12 footer__contact__line footer__contact__line--2 m-0 px-0">TOUCH</p>

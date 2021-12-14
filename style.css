@@ -368,4 +368,75 @@ body {
   list-style: none;
 }
 
+.about__hero {
+  border-bottom: solid 3px #fff;
+}
+.about__hero__title {
+  font-size: 19rem;
+  z-index: 1;
+}
+.about__hero__thumbnail {
+  height: 800px;
+}
+.about__hero__thumbnail__wrapper {
+  width: 100%;
+  height: 130%;
+  transform: translateY(-15%);
+  z-index: -1;
+}
+.about__hero__thumbnail__wrapper__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__hero__name {
+  font-size: 19rem;
+  z-index: 1;
+}
+.about__tagline {
+  border-bottom: solid 3px #fff;
+}
+.about__tagline__content {
+  font-size: 5rem;
+  line-height: 1;
+}
+.about__description {
+  border-bottom: solid 3px #fff;
+}
+.about__description__title {
+  font-size: 3.4rem;
+  line-height: 1;
+}
+.about__description__text {
+  font-size: 1.2rem;
+}
+.about__services {
+  border-bottom: solid 3px #fff;
+}
+.about__services__title {
+  font-size: 3.4rem;
+}
+.about__services__service__number {
+  font-size: 1.2rem;
+}
+.about__services__service__name {
+  font-size: 1.2rem;
+}
+.about__services__service__description {
+  font-size: 1rem;
+}
+.about__cv__title {
+  font-size: 3.4rem;
+}
+.about__cv__list {
+  list-style: none;
+  border-top: solid 3px #fff;
+}
+.about__cv__list__item {
+  font-size: 1.2rem;
+}
+.about__cv__list__item:not(.last) {
+  border-bottom: solid 1px #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

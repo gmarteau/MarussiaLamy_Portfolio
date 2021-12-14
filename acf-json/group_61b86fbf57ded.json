@@ -376,13 +376,14 @@
             "name": "cv",
             "type": "group",
             "instructions": "Expériences pro et formations",
-            "required": 1,
-            "conditional_logic": false,
+            "required": 0,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
+            "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_61b86e7852c76",
@@ -405,7 +406,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -424,7 +425,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -443,7 +444,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -486,7 +487,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -505,7 +506,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -524,7 +525,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -567,7 +568,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -586,7 +587,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -605,7 +606,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -648,7 +649,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -667,7 +668,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -686,7 +687,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -729,7 +730,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -748,7 +749,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -767,7 +768,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -810,7 +811,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -829,7 +830,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -848,7 +849,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -891,7 +892,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -910,7 +911,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -929,7 +930,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -972,7 +973,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -991,7 +992,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1010,7 +1011,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1053,7 +1054,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1072,7 +1073,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1091,7 +1092,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1134,7 +1135,7 @@
                             "name": "title",
                             "type": "text",
                             "instructions": "Nom du poste ou de la formation",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1153,7 +1154,7 @@
                             "name": "institution",
                             "type": "text",
                             "instructions": "Nom de l'entreprise ou de l'école",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1172,7 +1173,7 @@
                             "name": "date",
                             "type": "text",
                             "instructions": "Période de la formation ou de l'emploi",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -1187,8 +1188,7 @@
                         }
                     ]
                 }
-            ],
-            "layout": "block"
+            ]
         }
     ],
     "location": [
@@ -1209,5 +1209,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639477355
+    "modified": 1639482020
 }
