@@ -1,0 +1,15 @@
+.anim-up {
+    @include animation-up;
+}
+
+.getin-is-animated {
+    @include footer-anim(getin-anim);
+}
+
+.touch-is-animated {
+    @include footer-anim(touch-anim);
+}
+
+.withme-is-animated {
+    @include footer-anim(withme-anim);
+}

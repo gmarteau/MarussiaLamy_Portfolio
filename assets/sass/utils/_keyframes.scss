@@ -6,3 +6,45 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes anim-up {
+    from {
+        transform: translateY(150px);
+        transform-origin: bottom;
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes getin-anim {
+    from {
+        transform: translateX(0);
+        transform-origin: left;
+    }
+    to {
+        transform: translateX(20%);
+    }
+}
+
+@keyframes touch-anim {
+    from {
+        transform: translateX(35%);
+        transform-origin: right;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes withme-anim {
+    from {
+        transform: translateX(0);
+        transform-origin: left;
+    }
+    to {
+        transform: translateX(10%);
+    }
+}

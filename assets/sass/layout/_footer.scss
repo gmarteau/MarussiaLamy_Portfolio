@@ -16,15 +16,6 @@
             &:hover {
                 @include link-transition-hover;
             }
-            &--1 {
-                transform: translateX(20%);
-            }
-            &--2 {
-                transform: translateX(0);
-            }
-            &--3 {
-                transform: translateX(10%);
-            }
         }
         &__cta {
             width: $contact-cta-size;

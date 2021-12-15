@@ -10,7 +10,7 @@
         <p class="col-6 pe-0 ps-4"><?= get_field('tagline_02'); ?></p>
     </div>
 
-    <div class="row contact__option">
+    <div id="contactEmail" class="row contact__option">
         <a href="mailto:<?= get_option('admin_email') ?>" class="col-12 contact__option__link p-0 d-flex justify-content-between align-items-center">
             Email<span class="round-cta"><i class="fas fa-arrow-right"></i></span>
         </a>
@@ -23,13 +23,15 @@
     <ul class="row contact__social__list p-0">
         <?php
         $socials = wp_get_nav_menu_items('social-media');
+        $i = 1;
         if ($socials) : foreach ($socials as $social) :
         ?>
-        <li class="col-12 contact__option p-0">
+        <li id="contactSocial--<?= $i; ?>" class="col-12 contact__option p-0">
             <a href="<?= $social->url; ?>" class="col-12 contact__option__link p-0 d-flex justify-content-between align-items-center">
                 <?= $social->title; ?><span class="round-cta"><i class="fas fa-arrow-right"></i></span>
             </a>
         </li>
+        <?php $i++; ?>
         <?php endforeach; endif; ?>
     </ul>
 <?php endwhile; ?>

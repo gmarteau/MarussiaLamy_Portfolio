@@ -101,3 +101,11 @@
 @mixin rotate-infinite($duration: 5s) {
     animation: rotate $duration linear infinite;
 }
+
+@mixin animation-up {
+    animation: anim-up ease-out $anim-up both;
+}
+
+@mixin footer-anim($keyframes: getin-anim) {
+    animation: $keyframes ease-out $anim-up both;
+}

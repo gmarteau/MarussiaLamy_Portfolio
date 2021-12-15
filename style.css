@@ -11,6 +11,60 @@ Description: Art Director and Graphic Designer Marussia Lamy's portfolio
     transform: rotate(360deg);
   }
 }
+@keyframes anim-up {
+  from {
+    transform: translateY(150px);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes getin-anim {
+  from {
+    transform: translateX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: translateX(20%);
+  }
+}
+@keyframes touch-anim {
+  from {
+    transform: translateX(35%);
+    transform-origin: right;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes withme-anim {
+  from {
+    transform: translateX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: translateX(10%);
+  }
+}
+.anim-up {
+  animation: anim-up ease-out 800ms both;
+}
+
+.getin-is-animated {
+  animation: getin-anim ease-out 800ms both;
+}
+
+.touch-is-animated {
+  animation: touch-anim ease-out 800ms both;
+}
+
+.withme-is-animated {
+  animation: withme-anim ease-out 800ms both;
+}
+
 body {
   box-sizing: border-box;
   background-color: #6B7379;
@@ -60,6 +114,7 @@ body {
   font-size: 3.4rem;
   width: max-content;
   height: max-content;
+  z-index: 999;
 }
 .chevron-cta:hover {
   color: #fff;
@@ -205,7 +260,7 @@ body {
 .home__category:hover > .home__category__link {
   color: #9ca3a8;
 }
-.home__category:hover > .home__category__link > p {
+.home__category:hover > .home__category__link > .home__category__link__text-wrap {
   transform: translateX(15%);
 }
 .home__category:hover > .home__category__img {
@@ -219,10 +274,31 @@ body {
   text-decoration: none;
   transition: color 250ms ease-in-out;
 }
-.home__category__link__content {
+.home__category__link__text-wrap {
   transform: translateX(0);
   transform-origin: left;
   transition: transform 250ms ease-in-out;
+}
+.home__category__link__content {
+  animation: anim-up ease-out 800ms both;
+}
+.home__category__link__content--0 {
+  animation-delay: 0ms;
+}
+.home__category__link__content--1 {
+  animation-delay: 150ms;
+}
+.home__category__link__content--2 {
+  animation-delay: 300ms;
+}
+.home__category__link__content--3 {
+  animation-delay: 450ms;
+}
+.home__category__link__content--4 {
+  animation-delay: 600ms;
+}
+.home__category__link__content--5 {
+  animation-delay: 750ms;
 }
 .home__category__img {
   position: absolute;
@@ -261,15 +337,6 @@ body {
 }
 .footer__contact__line:hover {
   color: #9ca3a8;
-}
-.footer__contact__line--1 {
-  transform: translateX(20%);
-}
-.footer__contact__line--2 {
-  transform: translateX(0);
-}
-.footer__contact__line--3 {
-  transform: translateX(10%);
 }
 .footer__contact__cta {
   width: 150px;
@@ -479,12 +546,15 @@ body {
 
 .contact__title {
   border-bottom: solid 3px #fff;
+  animation: anim-up ease-out 800ms both;
 }
 .contact__title__text {
   font-size: 26.4vw;
 }
 .contact__taglines {
   font-size: 1.2rem;
+  animation: anim-up ease-out 800ms both;
+  animation-delay: 150ms;
 }
 .contact__option {
   border-bottom: solid 3px #fff;

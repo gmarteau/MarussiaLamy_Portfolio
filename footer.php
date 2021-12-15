@@ -3,9 +3,15 @@
         <?php if (!is_page('contact')) : ?>
         <footer class="container-fluid footer">
             <a class="row footer__contact py-5" href="<?= get_page_link(get_page_by_title('contact')); ?>">
-                <p class="col-12 footer__contact__line footer__contact__line--1 m-0 px-0">GET IN</p>
-                <p class="col-12 footer__contact__line footer__contact__line--2 m-0 px-0">TOUCH</p>
-                <p class="col-12 footer__contact__line footer__contact__line--3 m-0 px-0">WITH ME</p>
+                <div id="getinWrapper">
+                    <p id="getin" class="col-12 footer__contact__line m-0 px-0">GET IN</p>
+                </div>
+                <div id="touchWrapper">
+                    <p id="touch" class="col-12 footer__contact__line m-0 px-0">TOUCH</p>
+                </div>
+                <div id="withmeWrapper">
+                    <p id="withme" class="col-12 footer__contact__line m-0 px-0">WITH ME</p>
+                </div>
                 <div class="footer__contact__cta">
                     Contact
                 </div>

@@ -5,7 +5,7 @@
         &:hover {
             & > .home__category__link {
                 @include link-transition-hover;
-                & > p {
+                & > .home__category__link__text-wrap {
                     @include home-link-transition-hover;
                 }
             }
@@ -17,8 +17,16 @@
             font-size: $font-title;
             line-height: 1;
             @include link-transition;
-            &__content {
+            &__text-wrap {
                 @include home-link-transition;
+            }
+            &__content {
+                @include animation-up;
+                @for $i from 0 through $num-skills {
+                    &--#{$i} {
+                        animation-delay: $anim-up-item-delay * $i;
+                    }
+                }
             }
         }
         &__img {

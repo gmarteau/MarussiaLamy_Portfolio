@@ -29,6 +29,36 @@ function marussialamy_register_assets() {
         
         wp_enqueue_script('scroll-down-elt');    
     }
+
+    if (is_singular('project')) {
+        wp_register_script('single-project-anim', get_template_directory_uri() . '/assets/js/single-project-anim.js', [], false, true);
+        
+        wp_enqueue_script('single-project-anim');
+    }
+
+    if (is_archive()) {
+        wp_register_script('archive-anim', get_template_directory_uri() . '/assets/js/archive-anim.js', [], false, true);
+        
+        wp_enqueue_script('archive-anim');
+    }
+
+    if (!is_page('contact')) {
+        wp_register_script('footer-anim', get_template_directory_uri() . '/assets/js/footer-anim.js', [], false, true);
+        
+        wp_enqueue_script('footer-anim');
+    }
+
+    if (is_page('about')) {
+        wp_register_script('about-anim', get_template_directory_uri() . '/assets/js/about-anim.js', [], false, true);
+        
+        wp_enqueue_script('about-anim');
+    }
+
+    if (is_page('contact')) {
+        wp_register_script('contact-anim', get_template_directory_uri() . '/assets/js/contact-anim.js', [], false, true);
+        
+        wp_enqueue_script('contact-anim');
+    }
 }
 
 function marussialamy_init() {
