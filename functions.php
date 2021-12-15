@@ -31,8 +31,10 @@ function marussialamy_register_assets() {
     }
 
     if (is_singular('project')) {
+        wp_register_script('single-project-cursors', get_template_directory_uri() . '/assets/js/single-project-cursors.js', ['jquery-lettering'], false, true);
         wp_register_script('single-project-anim', get_template_directory_uri() . '/assets/js/single-project-anim.js', [], false, true);
         
+        wp_enqueue_script('single-project-cursors');
         wp_enqueue_script('single-project-anim');
     }
 

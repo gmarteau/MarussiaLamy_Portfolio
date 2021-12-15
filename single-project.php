@@ -64,7 +64,8 @@
             <h3 class="col-11 project__others__title__content px-0 py-5 mt-5">Autres projets</h3>
             <a href="#page-top" class="col-1 d-block chevron-cta chevron-cta--up"><i class="fas fa-chevron-up"></i></a>
         </div>
-        <div class="col-12 project__others__links px-0 pt-5 d-flex">
+
+        <div id="otherProjectsSection" class="col-12 project__others__links px-0 pt-5 d-flex">
             <?php
             $query = new WP_Query([
                 'post_type' => 'project',
@@ -74,8 +75,13 @@
             $i = 1;
             while ($query->have_posts()) : $query->the_post();
             ?>
-            <a href="<?= get_permalink(); ?>" class="col-6 project__others__links__link d-block text-<?= ($i === 1) ? 'start' : 'end'; ?>">
+            <a id="otherProject--<?= $i; ?>" href="<?= get_permalink(); ?>" class="col-6 project__others__links__link d-block text-<?= ($i === 1) ? 'start' : 'end'; ?>">
                 <?= get_the_title(); ?>
+                <?php if ($i === 1) : ?>
+                    <?php get_template_part('template-parts/prev-project-cursor'); ?>
+                <?php else : ?>
+                    <?php get_template_part('template-parts/next-project-cursor'); ?>
+                <?php endif; ?>
             </a>
             <?php $i++; ?>
             <?php

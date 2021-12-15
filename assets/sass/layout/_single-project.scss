@@ -60,6 +60,7 @@
         }
         &__links {
             &__link {
+                position: relative;
                 font-size: $font-reg;
                 @include link-transition;
                 &:hover {
