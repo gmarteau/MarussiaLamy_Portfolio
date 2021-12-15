@@ -1,0 +1,15 @@
+.chevron-cta {
+    color: $clr-txt;
+    text-decoration: none;
+    font-size: $font-big;
+    width: max-content;
+    height: max-content;
+    &:hover {
+        color: $clr-txt;
+    }
+    &--back {
+        position: fixed;
+        top: 6rem;
+        left: 2rem;
+    }
+}

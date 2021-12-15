@@ -7,6 +7,7 @@
             <div class="about__hero__thumbnail__wrapper">
                 <?php the_post_thumbnail('large', ['class' => 'about__hero__thumbnail__wrapper__img']); ?>
             </div>
+            <?php get_template_part('template-parts/scroll-down'); ?>
         </div>
         <h2 class="col-12 about__hero__name px-0 m-0 text-center"><?= get_field('name'); ?></h2>
     </div>

@@ -1,11 +1,15 @@
 .project {
     &__hero {
+        position: relative;
         border-bottom: solid 3px $clr-txt;
         &__title {
-            font-size: $font-title;
+            font-size: $font-title*1.2;
+            z-index: 1;
         }
         &__thumbnail {
             height: 800px;
+            transform: translateY(-65px);
+            z-index: -1;
             &__img {
                 @include img-cover;
             }
@@ -49,8 +53,10 @@
     }
     &__others {
         &__title {
-            font-size: $font-title;
             border-bottom: solid 3px $clr-txt;
+            &__content {
+                font-size: $font-title;
+            }
         }
         &__links {
             &__link {

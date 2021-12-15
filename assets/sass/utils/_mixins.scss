@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin link-transition {
     color: $clr-txt;
     text-decoration: none;
@@ -85,4 +87,17 @@
         height: $cta-med-size;
         font-size: $font-big;
     }
+}
+
+@mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {
+    $angle-per-char: math.div($angle-span, $num-letters);
+    @for $i from 1 through $num-letters {
+        .char#{$i} {
+            transform: rotate($angle-offset + $angle-per-char * $i);
+        }
+    }
+}
+
+@mixin rotate-infinite($duration: 5s) {
+    animation: rotate $duration linear infinite;
 }

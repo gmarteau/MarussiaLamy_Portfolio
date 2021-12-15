@@ -1,0 +1,22 @@
+.scroll-down {
+    position: absolute;
+    right: -5%;
+    top: 300px;
+    width: auto;
+    height: auto;
+    &__elt {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        & span {
+            height: 100px;
+            position: absolute;
+            width: 20px;
+            left: 50%;
+            top: 0;
+            transform-origin: bottom center;
+        }
+        @include rotated-text(28, 360deg, 0deg);
+        @include rotate-infinite(10s);
+    }
+}

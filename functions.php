@@ -22,6 +22,13 @@ function marussialamy_register_assets() {
     wp_enqueue_style('marussialamy-style');
     wp_enqueue_style('font-awesome');
     wp_enqueue_script('bootstrap');
+
+    if (is_page('about') || is_singular('project')) {
+        wp_register_script('jquery-lettering', get_template_directory_uri() . '/assets/js/jquery.lettering.min.js', ['jquery-min'], false, true);
+        wp_register_script('scroll-down-elt', get_template_directory_uri() . '/assets/js/scroll-down-elt.js', ['jquery-lettering'], false, true);
+        
+        wp_enqueue_script('scroll-down-elt');    
+    }
 }
 
 function marussialamy_init() {

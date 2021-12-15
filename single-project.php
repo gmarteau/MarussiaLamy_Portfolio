@@ -1,11 +1,20 @@
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post() ?>
-    <div class="row project__hero py-5">
-        <h1 class="col-12 project__hero__title my-5 text-center px-0"><?= get_the_title(); ?></h1>
+    <?php
+    $previousPageUrl = wp_get_referer();
+    $ctaUrl = $previousPageUrl ? $previousPageUrl : get_home_url();
+    ?>
+    <a href="<?= $ctaUrl; ?>" class="chevron-cta chevron-cta--back d-block">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+
+    <div class="row project__hero pt-5">
+        <h1 class="col-12 project__hero__title text-center px-0"><?= get_the_title(); ?></h1>
         <div class="col-12 project__hero__thumbnail px-0">
             <?php the_post_thumbnail('large', ['class' => 'project__hero__thumbnail__img']); ?>
         </div>
+        <?php get_template_part('template-parts/scroll-down'); ?>
     </div>
 
     <div class="row project__info py-5 mt-5">
@@ -49,8 +58,11 @@
     </div>
 
     <div class="row project__others py-5">
-        <h3 class="col-12 project__others__title px-0 py-5 mt-5">Voir d'autres projets</h3>
-        <div class="col-12 project__others__links px-0 py-5 d-flex">
+        <div class="col-12 project__others__title d-flex align-items-baseline">
+            <h3 class="col-11 project__others__title__content px-0 py-5 mt-5">Autres projets</h3>
+            <a href="#page-top" class="col-1 d-block chevron-cta chevron-cta--up"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="col-12 project__others__links px-0 pt-5 d-flex">
             <?php
             $query = new WP_Query([
                 'post_type' => 'project',
@@ -60,7 +72,7 @@
             $i = 1;
             while ($query->have_posts()) : $query->the_post();
             ?>
-            <a href="<?= get_permalink(); ?>" class="col-6 project__others__links__link d-block mt-5 text-<?= ($i === 1) ? 'start' : 'end'; ?>">
+            <a href="<?= get_permalink(); ?>" class="col-6 project__others__links__link d-block text-<?= ($i === 1) ? 'start' : 'end'; ?>">
                 <?= get_the_title(); ?>
             </a>
             <?php $i++; ?>

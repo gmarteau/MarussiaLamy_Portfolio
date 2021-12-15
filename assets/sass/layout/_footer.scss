@@ -40,7 +40,7 @@
             justify-content: center;
             align-items: center;
             transition: all $link-hover-transition ease-in-out;
-            animation: rotate 5s linear infinite;
+            @include rotate-infinite;
             &:hover {
                 background-color: $clr-txt-dark;
                 color: $clr-txt;
