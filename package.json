@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.44.0"
+  },
+  "dependencies": {
+    "@swup/scripts-plugin": "^1.1.0",
+    "swup": "^2.0.14"
   }
 }

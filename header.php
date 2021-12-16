@@ -9,7 +9,11 @@
 </head>
 
 <body>
-    <div class="main-wrapper container-fluid">
+    <div class="main-wrapper container-fluid" id="swup">
+        <div class="banner-transition p-0 m-0 transition-swipe">
+            <div class="banner-transition__logo d-flex justify-content-center align-items-center transition-swipe">maru</div>
+        </div>
+
         <header>
             <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
                 <div class="container-fluid px-0">
@@ -33,4 +37,4 @@
             </nav>
         </header>
 
-        <main class="container-fluid mt-0 pt-5" id="page-top">
+        <main id="page-top" class="container-fluid mt-0 pt-5">

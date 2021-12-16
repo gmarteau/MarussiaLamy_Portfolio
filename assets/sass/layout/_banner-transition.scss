@@ -1,0 +1,15 @@
+.banner-transition {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: $clr-txt-dark;
+    color: $clr-txt;
+    z-index: 1000;
+    font-size: $font-title;
+    &__logo {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -3,7 +3,7 @@
 <?php while (have_posts()) : the_post() ?>
     <?php
     $previousPageUrl = wp_get_referer();
-    $ctaUrl = $previousPageUrl ? $previousPageUrl : get_home_url();
+    $ctaUrl = ($previousPageUrl && str_contains($previousPageUrl, get_home_url())) ? $previousPageUrl : get_home_url();
     ?>
     <a href="<?= $ctaUrl; ?>" class="chevron-cta chevron-cta--back d-block">
         <i class="fas fa-chevron-left"></i>
@@ -76,12 +76,8 @@
             while ($query->have_posts()) : $query->the_post();
             ?>
             <a id="otherProject--<?= $i; ?>" href="<?= get_permalink(); ?>" class="col-6 project__others__links__link d-block text-<?= ($i === 1) ? 'start' : 'end'; ?>">
+                <?= ($i === 1) ? 'Previous:' : 'Next:' ?><br />  
                 <?= get_the_title(); ?>
-                <?php if ($i === 1) : ?>
-                    <?php get_template_part('template-parts/prev-project-cursor'); ?>
-                <?php else : ?>
-                    <?php get_template_part('template-parts/next-project-cursor'); ?>
-                <?php endif; ?>
             </a>
             <?php $i++; ?>
             <?php

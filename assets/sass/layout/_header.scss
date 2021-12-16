@@ -2,6 +2,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
+    z-index: 999;
     &__brand {
         color: $clr-txt;
         &:hover {
