@@ -87,8 +87,18 @@ body {
   cursor: url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/images/cursor.png") -70 70, auto;
 }
 
+@font-face {
+  font-family: "telegrafregular";
+  src: url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/fonts/telegraf_regular_400-webfont.eot");
+  src: url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/fonts/telegraf_regular_400-webfont.eot?#iefix") format("embedded-opentype"), url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/fonts/telegraf_regular_400-webfont.woff2") format("woff2"), url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/fonts/telegraf_regular_400-webfont.woff") format("woff"), url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/fonts/telegraf_regular_400-webfont.ttf") format("truetype"), url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/fonts/telegraf_regular_400-webfont.svg#telegrafregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   font-family: "Helvetica Neue LT Pro", Helvetica, sans-serif;
+}
+*:not(h1, .home__category__link__content, .footer__contact__line, .contact__option__link, .about__hero__name) {
+  font-family: "telegrafregular", "Helvetica Neue LT Pro", Helvetica, sans-serif;
 }
 
 .transition-swipe {
@@ -669,7 +679,7 @@ html.is-animating .transition-swipe {
   animation: anim-up ease-out 800ms both;
 }
 .contact__title__text {
-  font-size: 26.4vw;
+  font-size: 25vw;
 }
 .contact__taglines {
   font-size: 1.2rem;
@@ -711,7 +721,7 @@ html.is-animating .transition-swipe {
   border-bottom: solid 3px #fff;
 }
 .about__hero__title {
-  font-size: 22.7vw;
+  font-size: 22.2vw;
   z-index: 1;
 }
 .about__hero__thumbnail {
@@ -730,7 +740,7 @@ html.is-animating .transition-swipe {
   object-fit: cover;
 }
 .about__hero__name {
-  font-size: 23vw;
+  font-size: 22.5vw;
   z-index: 1;
 }
 .about__tagline {
