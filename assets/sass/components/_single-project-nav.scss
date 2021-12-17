@@ -1,0 +1,35 @@
+.single-project-nav {
+    position: fixed;
+    z-index: 999;
+    list-style: none;
+    width: 30%;
+    top: 150px;
+    transform: translateX(-110%);
+    transform-origin: left;
+    transition: transform $link-hover-transition ease-out;
+    &.show {
+        transform: translateX(0);
+    }
+    &__category {
+        &__link-wrapper {
+            transform: translateX(0);
+            transform-origin: left;
+            transition: transform $link-hover-transition ease-in-out;
+            &:hover {
+                transform: translateX(25%);
+            }
+        }
+        &__link {
+            text-decoration: none;
+            color: $clr-txt-dark;
+            background-color: $clr-elements;
+            font-size: $font-big;
+            &:hover {
+                color: $clr-txt-dark;
+            }
+            &:active {
+                color: $clr-txt-dark;
+            }
+        }
+    }
+}

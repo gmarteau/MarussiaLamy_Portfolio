@@ -12,9 +12,11 @@ Description: Art Director and Graphic Designer Marussia Lamy's portfolio
 @import './base/base';
 @import './base/typography';
 @import './base/page-transition';
+@import './components/toggler';
 @import './components/round-cta';
 @import './components/chevron-cta';
 @import './components/scroll-down';
+@import './components/single-project-nav';
 @import './layout/header';
 @import './layout/banner-transition';
 @import './layout/home';

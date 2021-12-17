@@ -1,9 +1,13 @@
 const swup = new Swup({
     cache: false,
     plugins: [new SwupScriptsPlugin({
-        head: false,
+        head: true,
         body: true
-    })]
+    })],
+    linkSelector:
+      'a[href^="' +
+      window.location.origin +
+      '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
 });
 
 const replaceBanner = () => {
@@ -22,10 +26,5 @@ const goToTop = () => {
     });
 };
 
-const loadScripts = () => {
-    console.log(document.getElementsByTagName('script'));
-};
-
 swup.on('animationOutStart', replaceBanner);
 swup.on('animationOutDone', goToTop);
-swup.on('animationInDone', loadScripts);

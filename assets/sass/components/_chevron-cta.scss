@@ -4,13 +4,8 @@
     font-size: $font-big;
     width: max-content;
     height: max-content;
-    z-index: 999;
     &:hover {
         color: $clr-txt;
-    }
-    &--back {
-        position: fixed;
-        top: 6rem;
-        left: 2rem;
+        cursor: pointer;
     }
 }

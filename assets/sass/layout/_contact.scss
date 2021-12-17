@@ -25,6 +25,9 @@
                     background-color: $clr-elements;
                 }
             }
+            &:active {
+                color: $clr-txt;
+            }
         }
     }
     &__social {

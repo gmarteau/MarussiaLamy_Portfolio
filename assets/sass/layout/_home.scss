@@ -13,6 +13,11 @@
                 @include home-img-show-transition-hover;
             }
         }
+        &:active {
+            & > .home__category__link {
+                color: $clr-active;
+            }
+        }
         &__link {
             font-size: $font-title;
             line-height: 1;

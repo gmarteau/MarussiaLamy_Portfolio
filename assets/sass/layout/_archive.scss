@@ -15,6 +15,9 @@
                 &:hover {
                     @include link-transition-hover;
                 }
+                &:active {
+                    color: $clr-active;
+                }
             }
         }
     }
@@ -79,6 +82,9 @@
                         & > .round-cta--small {
                             background-color: $clr-elements;
                         }
+                    }
+                    &:active {
+                        color: $clr-txt;
                     }
                 }
             }

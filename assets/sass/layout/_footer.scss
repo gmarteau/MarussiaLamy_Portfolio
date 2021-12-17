@@ -16,6 +16,9 @@
             &:hover {
                 @include link-transition-hover;
             }
+            &:active {
+                color: $clr-active;
+            }
         }
         &__cta {
             width: $contact-cta-size;
@@ -36,6 +39,9 @@
                 background-color: $clr-txt-dark;
                 color: $clr-txt;
             }
+            &:active {
+                color: $clr-txt;
+            }
         }
     }
     &__social {
@@ -50,6 +56,9 @@
                         color: $clr-txt;
                         text-decoration: none;
                         &:hover {
+                            color: $clr-txt;
+                        }
+                        &:active {
                             color: $clr-txt;
                         }
                     }

@@ -31,7 +31,7 @@ function marussialamy_register_assets() {
 
     if (is_singular('project')) {
         wp_register_script('single-project-anim', get_template_directory_uri() . '/assets/js/single-project-anim.js', [], false, true);
-        
+
         wp_enqueue_script('single-project-anim');
     }
 
@@ -61,6 +61,7 @@ function marussialamy_register_assets() {
 
     wp_enqueue_style('marussialamy-style');
     wp_enqueue_style('font-awesome');
+    wp_enqueue_script('jquery-min');
     wp_enqueue_script('bootstrap');
     wp_enqueue_script('swup-init');
 }

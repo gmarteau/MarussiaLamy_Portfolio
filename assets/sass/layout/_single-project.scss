@@ -66,6 +66,9 @@
                 &:hover {
                     @include link-transition-hover;
                 }
+                &:active {
+                    color: $clr-active;
+                }
             }
         }
     }

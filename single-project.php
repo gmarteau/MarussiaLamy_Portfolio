@@ -1,13 +1,11 @@
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post() ?>
-    <?php
-    $previousPageUrl = wp_get_referer();
-    $ctaUrl = ($previousPageUrl && str_contains($previousPageUrl, get_home_url())) ? $previousPageUrl : get_home_url();
-    ?>
-    <a href="<?= $ctaUrl; ?>" class="chevron-cta chevron-cta--back d-block">
-        <i class="fas fa-chevron-left"></i>
-    </a>
+    <div id="toggleNav" class="toggler">
+        <span class="toggler__bar"></span>
+        <span class="toggler__bar"></span>
+    </div>
+    <?php get_template_part('template-parts/single-project-nav'); ?>
 
     <div id="projectHero" class="row project__hero pt-5 mt-5">
         <h1 class="col-12 project__hero__title text-center px-0"><?= get_the_title(); ?></h1>
@@ -62,7 +60,7 @@
     <div class="row project__others py-5">
         <div class="col-12 project__others__title d-flex align-items-baseline">
             <h3 class="col-11 project__others__title__content px-0 py-5 mt-5">Autres projets</h3>
-            <a href="#page-top" class="col-1 d-block chevron-cta chevron-cta--up"><i class="fas fa-chevron-up"></i></a>
+            <a href="#page-top" class="col-1 d-block chevron-cta chevron-cta--up" data-no-swup><i class="fas fa-chevron-up"></i></a>
         </div>
 
         <div id="otherProjectsSection" class="col-12 project__others__links px-0 pt-5 d-flex">
