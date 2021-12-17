@@ -7,7 +7,7 @@ foreach ($categories as $category) :
 ?>
     <li class="col-12 single-project-nav__category px-0">
         <div class="single-project-nav__category__link-wrapper">
-            <a class="single-project-nav__category__link m-0" href="<?= $category->url; ?>">
+            <a class="single-project-nav__category__link custom-cursor m-0" href="<?= $category->url; ?>">
                 <?= $category->title; ?>
             </a>
         </div>

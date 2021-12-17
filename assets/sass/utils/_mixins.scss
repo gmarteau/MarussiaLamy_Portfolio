@@ -70,7 +70,7 @@
     transform: translateX(1.5%);
 }
 
-@mixin round-cta($size: 'med') {
+@mixin arrow($size: 'med') {
     background-color: $clr-txt;
     color: $clr-txt-dark;
     border-radius: 50%;

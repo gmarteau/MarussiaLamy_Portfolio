@@ -21,7 +21,7 @@
             &:hover {
                 color: $clr-txt;
                 @include contact-link-transition-hover;
-                & > .round-cta {
+                & > .arrow {
                     background-color: $clr-elements;
                 }
             }

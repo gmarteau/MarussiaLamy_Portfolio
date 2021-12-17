@@ -9,7 +9,7 @@
     foreach ($categories as $category) :
     ?>
         <li class="col-12 home__category px-0">
-            <a class="home__category__link h1 m-0" href="<?= $category->url; ?>">
+            <a class="home__category__link custom-cursor h1 m-0" href="<?= $category->url; ?>">
                 <div class="home__category__link__text-wrap">
                     <p class="home__category__link__content home__category__link__content--<?= $i; ?> m-0">
                         <?= $category->title; ?>

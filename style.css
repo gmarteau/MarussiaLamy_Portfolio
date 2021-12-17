@@ -80,6 +80,13 @@ body {
   position: relative;
 }
 
+.custom-cursor {
+  cursor: url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/images/cursor.png") -70 70, auto;
+}
+.custom-cursor:hover {
+  cursor: url("http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/images/cursor.png") -70 70, auto;
+}
+
 * {
   font-family: "Helvetica Neue LT Pro", Helvetica, sans-serif;
 }
@@ -119,7 +126,7 @@ html.is-animating .transition-swipe {
   transform: rotatez(-45deg);
 }
 
-.round-cta {
+.arrow {
   background-color: #fff;
   color: #242424;
   border-radius: 50%;
@@ -131,7 +138,7 @@ html.is-animating .transition-swipe {
   height: 150px;
   font-size: 3.4rem;
 }
-.round-cta--small {
+.arrow--small {
   background-color: #fff;
   color: #242424;
   border-radius: 50%;
@@ -142,6 +149,13 @@ html.is-animating .transition-swipe {
   width: 50px;
   height: 50px;
   font-size: 1.2rem;
+}
+.arrow--right {
+  transform: rotate(180deg);
+}
+.arrow--nobg {
+  width: 50px;
+  height: 50px;
 }
 
 .chevron-cta {
@@ -412,7 +426,6 @@ html.is-animating .transition-swipe {
   position: relative;
 }
 .footer__contact:hover {
-  cursor: pointer;
   color: #fff;
 }
 .footer__contact__line {
@@ -506,7 +519,7 @@ html.is-animating .transition-swipe {
   padding-bottom: 8rem;
 }
 .archive__grid__project {
-  height: 800px;
+  height: 600px;
 }
 .archive__grid__project__thumbnail {
   order: 2;
@@ -570,7 +583,7 @@ html.is-animating .transition-swipe {
   color: #fff;
   transform: translateX(15%);
 }
-.archive__grid__project__info__link:hover > .round-cta--small {
+.archive__grid__project__info__link:hover > .arrow--small {
   background-color: #dbff00;
 }
 .archive__grid__project__info__link:active {
@@ -678,7 +691,7 @@ html.is-animating .transition-swipe {
   color: #fff;
   transform: translateX(1.5%);
 }
-.contact__option__link:hover > .round-cta {
+.contact__option__link:hover > .arrow {
   background-color: #dbff00;
 }
 .contact__option__link:active {

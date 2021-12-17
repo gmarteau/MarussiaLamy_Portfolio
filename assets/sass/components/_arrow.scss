@@ -1,0 +1,13 @@
+.arrow {
+    @include arrow;
+    &--small {
+        @include arrow('small');
+    }
+    &--right {
+        transform: rotate(180deg);
+    }
+    &--nobg {
+        width: $cta-small-size;
+        height: $cta-small-size;
+    }
+}

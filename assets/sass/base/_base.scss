@@ -12,3 +12,10 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+
+.custom-cursor {
+    cursor: url('http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/images/cursor.png') -70 70, auto;
+    &:hover {
+        cursor: url('http://localhost/marussia-portfolio/wp-content/themes/marussialamy/assets/images/cursor.png') -70 70, auto;
+    }
+}

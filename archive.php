@@ -10,12 +10,14 @@
     <div class="col-12 archive__hero__links d-flex px-0">
         <div class="col-6 d-flex justify-content-start">
             <a class="archive__hero__links__link d-flex align-items-center" href="<?= get_term_link($firstDifferentSkill); ?>">
-                <i class="fas fa-arrow-left fa-lg me-2"></i><?= $firstDifferentSkill->name ?>
+                <img class="arrow--nobg" src="<?= get_template_directory_uri() . '/assets/images/arrow.svg'; ?>" alt="Flèche pointant vers la gauche" />
+                <?= $firstDifferentSkill->name ?>
             </a>
         </div>
         <div class="col-6 d-flex justify-content-end">
             <a class="archive__hero__links__link d-flex align-items-center" href="<?= get_term_link($secondDifferentSkill); ?>">
-                <?= $secondDifferentSkill->name ?><i class="fas fa-arrow-right fa-lg ms-2"></i>
+                <?= $secondDifferentSkill->name ?>
+                <img class="arrow--nobg arrow--right" src="<?= get_template_directory_uri() . '/assets/images/arrow.svg'; ?>" alt="Flèche pointant vers la droite" />
             </a>
         </div>
     </div>
@@ -36,7 +38,8 @@
                     <p class="archive__grid__project__info__client my-2"><?= get_field('client'); ?></p>
                     <h2 class="archive__grid__project__info__title my-2"><?= get_the_title(); ?></h2>
                     <a class="archive__grid__project__info__link my-2 d-flex align-items-center" href="<?= get_permalink(); ?>">
-                        <span class="round-cta--small me-3"><i class="fas fa-arrow-right"></i></span>Voir le projet
+                        <img class="arrow arrow--right arrow--small me-3" src="<?= get_template_directory_uri() . '/assets/images/arrow.svg'; ?>" alt="Flèche pointant vers la droite" />
+                        Voir le projet
                     </a>
                 </div>
             </div>

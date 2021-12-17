@@ -25,7 +25,7 @@
         padding-top: $archive-grid-padding;
         padding-bottom: $archive-grid-padding;
         &__project {
-            height: 800px;
+            height: 600px;
             &__thumbnail {
                 order: 2;
                 height: 100%;
@@ -79,7 +79,7 @@
                     @include archive-link-transition;
                     &:hover {
                         @include archive-link-transition-hover;
-                        & > .round-cta--small {
+                        & > .arrow--small {
                             background-color: $clr-elements;
                         }
                     }
