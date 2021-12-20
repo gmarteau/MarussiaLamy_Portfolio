@@ -1,7 +1,7 @@
 .project {
     &__hero {
         position: relative;
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-txt-dark;
         &__title {
             font-size: $font-title*1.2;
             z-index: 1;
@@ -16,7 +16,7 @@
         }
     }
     &__info {
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-txt-dark;
         &__client {
             font-size: $font-reg;
         }
@@ -26,24 +26,24 @@
         }
     }
     &__details {
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-txt-dark;
         &__description {
             font-size: $font-big;
             line-height: 1;
         }
         &__list {
-            border-top: solid 3px $clr-txt;
+            border-top: solid 3px $clr-txt-dark;
             list-style: none;
             font-size: $font-reg;
             &__item {
                 &:not(.last) {
-                    border-bottom: solid 1px $clr-txt;
+                    border-bottom: solid 1px $clr-txt-dark;
                 }
             }
         }
     }
     &__gallery {
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-txt-dark;
         &__image {
             height: 700px;
             &__img {
@@ -53,7 +53,7 @@
     }
     &__others {
         &__title {
-            border-bottom: solid 3px $clr-txt;
+            border-bottom: solid 3px $clr-txt-dark;
             &__content {
                 font-size: $font-title;
             }
@@ -63,11 +63,12 @@
                 position: relative;
                 font-size: $font-reg;
                 @include link-transition;
+                color: $clr-txt-dark;
                 &:hover {
-                    @include link-transition-hover;
+                    color: $clr-txt-dark;
                 }
                 &:active {
-                    color: $clr-active;
+                    color: $clr-txt-dark;
                 }
             }
         }

@@ -2,6 +2,25 @@ body {
     box-sizing: border-box;
     background-color: $clr-bg;
     color: $clr-txt;
+    &.archive {
+        background-color: $clr-txt-dark;
+        color: $clr-bg;
+    }
+    &.single-project {
+        background-color: $clr-txt;
+        color: $clr-txt-dark;
+    }
+    &.contact {
+        background-color: $clr-elements;
+        color: $clr-txt;
+    }
+    &.about {
+        background-color: $clr-bg;
+        color: $clr-txt-dark;
+        & .scroll-down {
+            color: $clr-txt-dark;
+        }
+    }
 }
 
 .main-wrapper {

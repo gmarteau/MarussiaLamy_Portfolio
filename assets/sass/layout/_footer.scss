@@ -12,8 +12,9 @@
             line-height: .8;
             width: max-content;
             @include link-transition;
+            color: $clr-txt;
             &:hover {
-                @include link-transition-hover;
+                color: $clr-active;
             }
             &:active {
                 color: $clr-active;
@@ -27,7 +28,7 @@
             right: $contact-cta-size;
             bottom: $contact-cta-size + 100px;
             background-color: $clr-elements;
-            color: $clr-txt-dark;
+            color: $clr-txt;
             font-size: $font-reg;
             display: flex;
             justify-content: center;
@@ -36,7 +37,6 @@
             @include rotate-infinite;
             &:hover {
                 background-color: $clr-txt-dark;
-                color: $clr-txt;
             }
             &:active {
                 color: $clr-txt;
@@ -66,10 +66,152 @@
         }
         &__email {
             &__link {
+                color: $clr-txt;
                 @include link-transition;
                 &:hover {
-                    @include link-transition-hover;
+                    color: $clr-active;
                 }
+            }
+        }
+    }
+}
+
+.footer {
+    &.archive {
+        & .footer {
+            &__contact {
+                border-top: solid 3px $clr-bg;
+                color: $clr-bg;
+                &:hover {
+                    color: $clr-txt;
+                }
+                &__line {
+                    color: $clr-bg;
+                    &:hover {
+                        color: $clr-active;
+                    }
+                    &:active {
+                        color: $clr-active;
+                    }        
+                }   
+            }
+            &__social {
+                border-top: solid 3px $clr-bg;
+                &__socials {
+                    &__list {
+                        &__item {
+                            &__link {
+                                color: $clr-bg;
+                                &:hover {
+                                    color: $clr-bg;
+                                }
+                                &:active {
+                                    color: $clr-bg;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__email {
+                    &__link {
+                        color: $clr-bg;
+                        &:hover {
+                            color: $clr-active;
+                        }
+                    }
+                }        
+            }
+        }
+    }
+    &.single-project {
+        & .footer {
+            &__contact {
+                border-top: solid 3px $clr-txt-dark;
+                color: $clr-txt-dark;
+                &:hover {
+                    color: $clr-elements;
+                }
+                &__line {
+                    color: $clr-txt-dark;
+                    &:hover {
+                        color: $clr-elements;
+                    }
+                    &:active {
+                        color: $clr-elements;
+                    }        
+                }   
+            }
+            &__social {
+                border-top: solid 3px $clr-txt-dark;
+                &__socials {
+                    &__list {
+                        &__item {
+                            &__link {
+                                color: $clr-txt-dark;
+                                &:hover {
+                                    color: $clr-txt-dark;
+                                }
+                                &:active {
+                                    color: $clr-txt-dark;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__email {
+                    &__link {
+                        color: $clr-txt-dark;
+                        &:hover {
+                            color: $clr-elements;
+                        }
+                    }
+                }        
+            }
+        }
+    }
+    &.about {
+        & .footer {
+            &__contact {
+                border-top: solid 3px $clr-txt-dark;
+                color: $clr-txt-dark;
+                &:hover {
+                    color: $clr-active;
+                }
+                &__line {
+                    color: $clr-txt-dark;
+                    &:hover {
+                        color: $clr-active;
+                    }
+                    &:active {
+                        color: $clr-active;
+                    }        
+                }   
+            }
+            &__social {
+                border-top: solid 3px $clr-txt-dark;
+                &__socials {
+                    &__list {
+                        &__item {
+                            &__link {
+                                color: $clr-txt-dark;
+                                &:hover {
+                                    color: $clr-txt-dark;
+                                }
+                                &:active {
+                                    color: $clr-txt-dark;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__email {
+                    &__link {
+                        color: $clr-txt-dark;
+                        &:hover {
+                            color: $clr-active;
+                        }
+                    }
+                }        
             }
         }
     }

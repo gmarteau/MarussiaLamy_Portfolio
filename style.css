@@ -67,8 +67,27 @@ Description: Art Director and Graphic Designer Marussia Lamy's portfolio
 
 body {
   box-sizing: border-box;
-  background-color: #6B7379;
-  color: #fff;
+  background-color: #6F6D5F;
+  color: #282828;
+}
+body.archive {
+  background-color: #ECECEC;
+  color: #6F6D5F;
+}
+body.single-project {
+  background-color: #282828;
+  color: #ECECEC;
+}
+body.contact {
+  background-color: #FD5B20;
+  color: #282828;
+}
+body.about {
+  background-color: #6F6D5F;
+  color: #ECECEC;
+}
+body.about .scroll-down {
+  color: #ECECEC;
 }
 
 .main-wrapper {
@@ -122,7 +141,7 @@ html.is-animating .transition-swipe {
   z-index: 999;
 }
 .toggler__bar {
-  background: #fff;
+  background: #ECECEC;
   height: 3px;
   margin: 4px 0;
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
@@ -137,8 +156,6 @@ html.is-animating .transition-swipe {
 }
 
 .arrow {
-  background-color: #fff;
-  color: #242424;
   border-radius: 50%;
   transition: all 250ms ease-in-out;
   display: flex;
@@ -149,8 +166,6 @@ html.is-animating .transition-swipe {
   font-size: 3.4rem;
 }
 .arrow--small {
-  background-color: #fff;
-  color: #242424;
   border-radius: 50%;
   transition: all 250ms ease-in-out;
   display: flex;
@@ -169,14 +184,14 @@ html.is-animating .transition-swipe {
 }
 
 .chevron-cta {
-  color: #fff;
+  color: #282828;
   text-decoration: none;
   font-size: 3.4rem;
   width: max-content;
   height: max-content;
 }
 .chevron-cta:hover {
-  color: #fff;
+  color: #282828;
   cursor: pointer;
 }
 
@@ -186,6 +201,7 @@ html.is-animating .transition-swipe {
   top: 300px;
   width: auto;
   height: auto;
+  color: #FD5B20;
 }
 .scroll-down__elt {
   position: relative;
@@ -309,15 +325,15 @@ html.is-animating .transition-swipe {
 }
 .single-project-nav__category__link {
   text-decoration: none;
-  color: #242424;
-  background-color: #dbff00;
+  color: #282828;
+  background-color: #FD5B20;
   font-size: 3.4rem;
 }
 .single-project-nav__category__link:hover {
-  color: #242424;
+  color: #282828;
 }
 .single-project-nav__category__link:active {
-  color: #242424;
+  color: #282828;
 }
 
 .navbar {
@@ -327,23 +343,87 @@ html.is-animating .transition-swipe {
   z-index: 999;
 }
 .navbar__brand {
-  color: #fff;
+  color: #282828;
 }
 .navbar__brand:hover {
-  color: #fff;
+  color: #282828;
 }
 .navbar__link {
   font-size: 1.2rem;
-  color: #fff;
+  color: #282828;
 }
 .navbar__link.active {
-  color: #9ca3a8;
+  color: #A19E91;
 }
 .navbar__link:hover {
-  color: #9ca3a8;
+  color: #A19E91;
 }
 .navbar__link:active {
-  color: #9ca3a8;
+  color: #A19E91;
+}
+
+header.archive .navbar__brand {
+  color: #6F6D5F;
+}
+header.archive .navbar__brand:hover {
+  color: #6F6D5F;
+}
+header.archive .navbar__link {
+  color: #6F6D5F;
+}
+header.archive .navbar__link.active {
+  color: #A19E91;
+}
+header.archive .navbar__link:hover {
+  color: #A19E91;
+}
+header.archive .navbar__link:active {
+  color: #A19E91;
+}
+header.single-project .navbar__brand {
+  color: #ECECEC;
+}
+header.single-project .navbar__brand:hover {
+  color: #ECECEC;
+}
+header.single-project .navbar__link {
+  color: #ECECEC;
+}
+header.single-project .navbar__link.active {
+  color: #FD5B20;
+}
+header.single-project .navbar__link:hover {
+  color: #FD5B20;
+}
+header.single-project .navbar__link:active {
+  color: #FD5B20;
+}
+header.contact .navbar__link.active {
+  color: #ECECEC;
+}
+header.contact .navbar__link:hover {
+  color: #ECECEC;
+}
+header.contact .navbar__link:active {
+  color: #ECECEC;
+}
+header.about .navbar__brand {
+  color: #ECECEC;
+}
+header.about .navbar__brand:hover {
+  color: #ECECEC;
+}
+header.about .navbar__link {
+  color: #ECECEC;
+}
+header.about .navbar__link.active {
+  color: #A19E91;
+}
+header.about .navbar__link:hover {
+  color: #A19E91;
+}
+header.about .navbar__link:active {
+  color: #A19E91;
 }
 
 .banner-transition {
@@ -352,8 +432,8 @@ html.is-animating .transition-swipe {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #242424;
-  color: #fff;
+  background-color: #282828;
+  color: #ECECEC;
   z-index: 1000;
   font-size: 6.5vw;
 }
@@ -367,7 +447,7 @@ html.is-animating .transition-swipe {
   position: relative;
 }
 .home__category:hover > .home__category__link {
-  color: #9ca3a8;
+  color: #A19E91;
 }
 .home__category:hover > .home__category__link > .home__category__link__text-wrap {
   transform: translateX(15%);
@@ -377,14 +457,14 @@ html.is-animating .transition-swipe {
   transform: translateX(-25%);
 }
 .home__category:active > .home__category__link {
-  color: #9ca3a8;
+  color: #A19E91;
 }
 .home__category__link {
   font-size: 6.5vw;
   line-height: 1;
-  color: #fff;
   text-decoration: none;
   transition: color 250ms ease-in-out;
+  color: #282828;
 }
 .home__category__link__text-wrap {
   transform: translateX(0);
@@ -430,27 +510,27 @@ html.is-animating .transition-swipe {
 }
 
 .footer__contact {
-  border-top: solid 3px #fff;
-  color: #fff;
+  border-top: solid 3px #282828;
+  color: #282828;
   text-decoration: none;
   position: relative;
 }
 .footer__contact:hover {
-  color: #fff;
+  color: #282828;
 }
 .footer__contact__line {
   font-size: 20vw;
   line-height: 0.8;
   width: max-content;
-  color: #fff;
   text-decoration: none;
   transition: color 250ms ease-in-out;
+  color: #282828;
 }
 .footer__contact__line:hover {
-  color: #9ca3a8;
+  color: #A19E91;
 }
 .footer__contact__line:active {
-  color: #9ca3a8;
+  color: #A19E91;
 }
 .footer__contact__cta {
   width: 150px;
@@ -459,8 +539,8 @@ html.is-animating .transition-swipe {
   position: absolute;
   right: 150px;
   bottom: 250px;
-  background-color: #dbff00;
-  color: #242424;
+  background-color: #FD5B20;
+  color: #282828;
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
@@ -469,41 +549,143 @@ html.is-animating .transition-swipe {
   animation: rotate 5s linear infinite;
 }
 .footer__contact__cta:hover {
-  background-color: #242424;
-  color: #fff;
+  background-color: #ECECEC;
 }
 .footer__contact__cta:active {
-  color: #fff;
+  color: #282828;
 }
 .footer__social {
   font-size: 1rem;
-  border-top: solid 3px #fff;
+  border-top: solid 3px #282828;
 }
 .footer__social__socials__list {
   list-style: none;
   display: flex;
 }
 .footer__social__socials__list__item__link {
-  color: #fff;
+  color: #282828;
   text-decoration: none;
 }
 .footer__social__socials__list__item__link:hover {
-  color: #fff;
+  color: #282828;
 }
 .footer__social__socials__list__item__link:active {
-  color: #fff;
+  color: #282828;
 }
 .footer__social__email__link {
-  color: #fff;
+  color: #282828;
   text-decoration: none;
   transition: color 250ms ease-in-out;
 }
 .footer__social__email__link:hover {
-  color: #9ca3a8;
+  color: #A19E91;
+}
+
+.footer.archive .footer__contact {
+  border-top: solid 3px #6F6D5F;
+  color: #6F6D5F;
+}
+.footer.archive .footer__contact:hover {
+  color: #282828;
+}
+.footer.archive .footer__contact__line {
+  color: #6F6D5F;
+}
+.footer.archive .footer__contact__line:hover {
+  color: #A19E91;
+}
+.footer.archive .footer__contact__line:active {
+  color: #A19E91;
+}
+.footer.archive .footer__social {
+  border-top: solid 3px #6F6D5F;
+}
+.footer.archive .footer__social__socials__list__item__link {
+  color: #6F6D5F;
+}
+.footer.archive .footer__social__socials__list__item__link:hover {
+  color: #6F6D5F;
+}
+.footer.archive .footer__social__socials__list__item__link:active {
+  color: #6F6D5F;
+}
+.footer.archive .footer__social__email__link {
+  color: #6F6D5F;
+}
+.footer.archive .footer__social__email__link:hover {
+  color: #A19E91;
+}
+.footer.single-project .footer__contact {
+  border-top: solid 3px #ECECEC;
+  color: #ECECEC;
+}
+.footer.single-project .footer__contact:hover {
+  color: #FD5B20;
+}
+.footer.single-project .footer__contact__line {
+  color: #ECECEC;
+}
+.footer.single-project .footer__contact__line:hover {
+  color: #FD5B20;
+}
+.footer.single-project .footer__contact__line:active {
+  color: #FD5B20;
+}
+.footer.single-project .footer__social {
+  border-top: solid 3px #ECECEC;
+}
+.footer.single-project .footer__social__socials__list__item__link {
+  color: #ECECEC;
+}
+.footer.single-project .footer__social__socials__list__item__link:hover {
+  color: #ECECEC;
+}
+.footer.single-project .footer__social__socials__list__item__link:active {
+  color: #ECECEC;
+}
+.footer.single-project .footer__social__email__link {
+  color: #ECECEC;
+}
+.footer.single-project .footer__social__email__link:hover {
+  color: #FD5B20;
+}
+.footer.about .footer__contact {
+  border-top: solid 3px #ECECEC;
+  color: #ECECEC;
+}
+.footer.about .footer__contact:hover {
+  color: #A19E91;
+}
+.footer.about .footer__contact__line {
+  color: #ECECEC;
+}
+.footer.about .footer__contact__line:hover {
+  color: #A19E91;
+}
+.footer.about .footer__contact__line:active {
+  color: #A19E91;
+}
+.footer.about .footer__social {
+  border-top: solid 3px #ECECEC;
+}
+.footer.about .footer__social__socials__list__item__link {
+  color: #ECECEC;
+}
+.footer.about .footer__social__socials__list__item__link:hover {
+  color: #ECECEC;
+}
+.footer.about .footer__social__socials__list__item__link:active {
+  color: #ECECEC;
+}
+.footer.about .footer__social__email__link {
+  color: #ECECEC;
+}
+.footer.about .footer__social__email__link:hover {
+  color: #A19E91;
 }
 
 .archive__hero {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #6F6D5F;
 }
 .archive__hero__title {
   height: 300px;
@@ -512,17 +694,17 @@ html.is-animating .transition-swipe {
   font-size: 14.3vw;
 }
 .archive__hero__links__link {
-  color: #fff;
   text-decoration: none;
   transition: color 250ms ease-in-out;
   font-size: 1.2rem;
   width: max-content;
+  color: #6F6D5F;
 }
 .archive__hero__links__link:hover {
-  color: #9ca3a8;
+  color: #A19E91;
 }
 .archive__hero__links__link:active {
-  color: #9ca3a8;
+  color: #A19E91;
 }
 .archive__grid {
   padding-top: 8rem;
@@ -548,7 +730,7 @@ html.is-animating .transition-swipe {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #6B7379;
+  background-color: #6F6D5F;
   opacity: 0;
   transition: opacity 250ms ease-in-out;
 }
@@ -585,24 +767,27 @@ html.is-animating .transition-swipe {
   width: max-content;
   transform: translateX(0);
   transform-origin: left;
-  color: #fff;
   text-decoration: none;
   transition: transform 250ms ease-in-out;
+  color: #6F6D5F;
+}
+.archive__grid__project__info__link > .arrow {
+  background-color: #6F6D5F;
 }
 .archive__grid__project__info__link:hover {
-  color: #fff;
   transform: translateX(15%);
+  color: #6F6D5F;
 }
 .archive__grid__project__info__link:hover > .arrow--small {
-  background-color: #dbff00;
+  background-color: #FD5B20;
 }
 .archive__grid__project__info__link:active {
-  color: #fff;
+  color: #6F6D5F;
 }
 
 .project__hero {
   position: relative;
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .project__hero__title {
   font-size: 7.8vw;
@@ -619,7 +804,7 @@ html.is-animating .transition-swipe {
   object-fit: cover;
 }
 .project__info {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .project__info__client {
   font-size: 1.2rem;
@@ -629,22 +814,22 @@ html.is-animating .transition-swipe {
   line-height: 1;
 }
 .project__details {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .project__details__description {
   font-size: 3.4rem;
   line-height: 1;
 }
 .project__details__list {
-  border-top: solid 3px #fff;
+  border-top: solid 3px #ECECEC;
   list-style: none;
   font-size: 1.2rem;
 }
 .project__details__list__item:not(.last) {
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #ECECEC;
 }
 .project__gallery {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .project__gallery__image {
   height: 700px;
@@ -655,7 +840,7 @@ html.is-animating .transition-swipe {
   object-fit: cover;
 }
 .project__others__title {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .project__others__title__content {
   font-size: 6.5vw;
@@ -663,19 +848,19 @@ html.is-animating .transition-swipe {
 .project__others__links__link {
   position: relative;
   font-size: 1.2rem;
-  color: #fff;
   text-decoration: none;
   transition: color 250ms ease-in-out;
+  color: #ECECEC;
 }
 .project__others__links__link:hover {
-  color: #9ca3a8;
+  color: #ECECEC;
 }
 .project__others__links__link:active {
-  color: #9ca3a8;
+  color: #ECECEC;
 }
 
 .contact__title {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #282828;
   animation: anim-up ease-out 800ms both;
 }
 .contact__title__text {
@@ -687,28 +872,31 @@ html.is-animating .transition-swipe {
   animation-delay: 150ms;
 }
 .contact__option {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #282828;
 }
 .contact__option__link {
   font-size: 15vw;
-  color: #fff;
+  color: #282828;
   text-decoration: none;
   transform: translateX(0);
   transform-origin: left;
   transition: transform 250ms ease-in-out;
 }
+.contact__option__link > .arrow {
+  background-color: #ECECEC;
+}
 .contact__option__link:hover {
-  color: #fff;
+  color: #282828;
   transform: translateX(1.5%);
 }
 .contact__option__link:hover > .arrow {
-  background-color: #dbff00;
+  background-color: #282828;
 }
 .contact__option__link:active {
-  color: #fff;
+  color: #282828;
 }
 .contact__social {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #282828;
 }
 .contact__social__title {
   font-size: 1.2rem;
@@ -718,7 +906,7 @@ html.is-animating .transition-swipe {
 }
 
 .about__hero {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .about__hero__title {
   font-size: 22.2vw;
@@ -744,14 +932,14 @@ html.is-animating .transition-swipe {
   z-index: 1;
 }
 .about__tagline {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .about__tagline__content {
   font-size: 6.5vw;
   line-height: 1;
 }
 .about__description {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .about__description__title {
   font-size: 3.4rem;
@@ -761,7 +949,7 @@ html.is-animating .transition-swipe {
   font-size: 1.2rem;
 }
 .about__services {
-  border-bottom: solid 3px #fff;
+  border-bottom: solid 3px #ECECEC;
 }
 .about__services__title {
   font-size: 3.4rem;
@@ -780,13 +968,13 @@ html.is-animating .transition-swipe {
 }
 .about__cv__list {
   list-style: none;
-  border-top: solid 3px #fff;
+  border-top: solid 3px #ECECEC;
 }
 .about__cv__list__item {
   font-size: 1.2rem;
 }
 .about__cv__list__item:not(.last) {
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px #ECECEC;
 }
 
 /*# sourceMappingURL=style.css.map */

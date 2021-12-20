@@ -1,13 +1,8 @@
 @use "sass:math";
 
 @mixin link-transition {
-    color: $clr-txt;
     text-decoration: none;
     transition: color $link-hover-transition ease-in-out;
-}
-
-@mixin link-transition-hover {
-    color: $clr-active;
 }
 
 @mixin home-link-transition {
@@ -23,13 +18,11 @@
 @mixin archive-link-transition {
     transform: translateX(0);
     transform-origin: left;
-    color: $clr-txt;
     text-decoration: none;
     transition: transform $link-hover-transition ease-in-out;
 }
 
 @mixin archive-link-transition-hover {
-    color: $clr-txt;
     transform: translateX(15%);
 }
 
@@ -71,8 +64,6 @@
 }
 
 @mixin arrow($size: 'med') {
-    background-color: $clr-txt;
-    color: $clr-txt-dark;
     border-radius: 50%;
     transition: all $link-hover-transition ease-in-out;
     display: flex;

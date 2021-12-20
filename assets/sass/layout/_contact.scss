@@ -18,11 +18,14 @@
             color: $clr-txt;
             text-decoration: none;
             @include contact-link-transition;
+            & > .arrow {
+                background-color: $clr-txt-dark;
+            }
             &:hover {
                 color: $clr-txt;
                 @include contact-link-transition-hover;
                 & > .arrow {
-                    background-color: $clr-elements;
+                    background-color: $clr-txt;
                 }
             }
             &:active {

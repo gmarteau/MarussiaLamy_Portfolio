@@ -23,3 +23,87 @@
         }
     }
 }
+
+header {
+    &.archive {
+        & .navbar {
+            &__brand {
+                color: $clr-bg;
+                &:hover {
+                    color: $clr-bg;
+                }
+            }
+            &__link {
+                color: $clr-bg;
+                &.active {
+                    color: $clr-active;
+                }
+                &:hover {
+                    color: $clr-active;
+                }
+                &:active {
+                    color: $clr-active;
+                }        
+            }
+        }
+    }
+    &.single-project {
+        & .navbar {
+            &__brand {
+                color: $clr-txt-dark;
+                &:hover {
+                    color: $clr-txt-dark;
+                }
+            }
+            &__link {
+                color: $clr-txt-dark;
+                &.active {
+                    color: $clr-elements;
+                }
+                &:hover {
+                    color: $clr-elements;
+                }
+                &:active {
+                    color: $clr-elements;
+                }        
+            }
+        }
+    }
+    &.contact {
+        & .navbar {
+            &__link {
+                &.active {
+                    color: $clr-txt-dark;
+                }
+                &:hover {
+                    color: $clr-txt-dark;
+                }
+                &:active {
+                    color: $clr-txt-dark;
+                }        
+            }
+        }
+    }
+    &.about {
+        & .navbar {
+            &__brand {
+                color: $clr-txt-dark;
+                &:hover {
+                    color: $clr-txt-dark;
+                }
+            }
+            &__link {
+                color: $clr-txt-dark;
+                &.active {
+                    color: $clr-active;
+                }
+                &:hover {
+                    color: $clr-active;
+                }
+                &:active {
+                    color: $clr-active;
+                }        
+            }
+        }
+    }
+}

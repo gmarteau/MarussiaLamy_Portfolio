@@ -4,7 +4,7 @@
     &__category {
         &:hover {
             & > .home__category__link {
-                @include link-transition-hover;
+                color: $clr-active;
                 & > .home__category__link__text-wrap {
                     @include home-link-transition-hover;
                 }
@@ -22,6 +22,7 @@
             font-size: $font-title;
             line-height: 1;
             @include link-transition;
+            color: $clr-txt;
             &__text-wrap {
                 @include home-link-transition;
             }

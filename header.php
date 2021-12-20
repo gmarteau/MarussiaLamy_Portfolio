@@ -10,11 +10,21 @@
 
 <body>
     <div class="main-wrapper container-fluid" id="swup">
-        <div class="banner-transition p-0 m-0 transition-swipe">
+        <div class="banner-transition p-0 m-0 transition-swipe
+            <?= is_page('contact') ? 'contact' : ''; ?>
+            <?= is_page('about') ? 'about' : ''; ?>
+            <?= is_post_type_archive('project') ? 'archive' : ''; ?>
+            <?= is_singular('project') ? 'single-project' : ''; ?>
+        ">
             <div class="banner-transition__logo d-flex justify-content-center align-items-center transition-swipe">maru</div>
         </div>
 
-        <header>
+        <header class="
+            <?= is_page('contact') ? 'contact' : ''; ?>
+            <?= is_page('about') ? 'about' : ''; ?>
+            <?= is_archive() ? 'archive' : ''; ?>
+            <?= is_singular('project') ? 'single-project' : ''; ?>
+        ">
             <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
                 <div class="container-fluid px-0">
                     <a class="navbar-brand navbar__brand" href="<?= get_home_url(); ?>">maru</a>
@@ -37,4 +47,9 @@
             </nav>
         </header>
 
-        <main id="page-top" class="container-fluid mt-0 pt-5">
+        <main id="page-top" class="container-fluid mt-0 pt-5
+            <?= is_page('contact') ? 'contact' : ''; ?>
+            <?= is_page('about') ? 'about' : ''; ?>
+            <?= is_archive() ? 'archive' : ''; ?>
+            <?= is_singular('project') ? 'single-project' : ''; ?>
+        ">

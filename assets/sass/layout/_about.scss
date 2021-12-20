@@ -1,6 +1,6 @@
 .about {
     &__hero {
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-txt-dark;
         &__title {
             font-size: 22.2vw;
             z-index: 1;
@@ -24,14 +24,14 @@
         }
     }
     &__tagline {
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-txt-dark;
         &__content {
             font-size: $font-title;
             line-height: 1;
         }
     }
     &__description {
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-txt-dark;
         &__title {
             font-size: $font-big;
             line-height: 1;
@@ -41,7 +41,7 @@
         }
     }
     &__services {
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-txt-dark;
         &__title {
             font-size: $font-big;
         }
@@ -63,11 +63,11 @@
         }
         &__list {
             list-style: none;
-            border-top: solid 3px $clr-txt;
+            border-top: solid 3px $clr-txt-dark;
             &__item {
                 font-size: $font-reg;
                 &:not(.last) {
-                    border-bottom: solid 1px $clr-txt;
+                    border-bottom: solid 1px $clr-txt-dark;
                 }
             }
         }

@@ -21,14 +21,14 @@
         }
         &__link {
             text-decoration: none;
-            color: $clr-txt-dark;
+            color: $clr-txt;
             background-color: $clr-elements;
             font-size: $font-big;
             &:hover {
-                color: $clr-txt-dark;
+                color: $clr-txt;
             }
             &:active {
-                color: $clr-txt-dark;
+                color: $clr-txt;
             }
         }
     }

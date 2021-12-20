@@ -1,6 +1,6 @@
 .archive {
     &__hero {
-        border-bottom: solid 3px $clr-txt;
+        border-bottom: solid 3px $clr-bg;
         &__title {
             height: 300px;
             & > h1 {
@@ -12,8 +12,9 @@
                 @include link-transition;
                 font-size: $font-reg;
                 width: max-content;
+                color: $clr-bg;
                 &:hover {
-                    @include link-transition-hover;
+                    color: $clr-active;
                 }
                 &:active {
                     color: $clr-active;
@@ -77,14 +78,19 @@
                     font-size: $font-small;
                     width: max-content;
                     @include archive-link-transition;
+                    color: $clr-bg;
+                    & > .arrow {
+                        background-color: $clr-bg;
+                    }
                     &:hover {
                         @include archive-link-transition-hover;
+                        color: $clr-bg;
                         & > .arrow--small {
                             background-color: $clr-elements;
                         }
                     }
                     &:active {
-                        color: $clr-txt;
+                        color: $clr-bg;
                     }
                 }
             }
