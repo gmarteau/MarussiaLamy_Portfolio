@@ -5,10 +5,18 @@
     width: auto;
     height: auto;
     color: $clr-elements;
+    @include mobile {
+        top: 200px;
+        right: -20%;
+    }
     &__elt {
         position: relative;
         width: 200px;
         height: 200px;
+        @include mobile {
+            width: 160px;
+            height: 160px;
+        }
         & span {
             height: 100px;
             position: absolute;
@@ -16,6 +24,9 @@
             left: 50%;
             top: 0;
             transform-origin: bottom center;
+            @include mobile {
+                height: 80px;
+            }
         }
         @include rotated-text(28, 360deg, 0deg);
         @include rotate-infinite(10s);

@@ -31,6 +31,15 @@ Description: Art Director and Graphic Designer Marussia Lamy's portfolio
     transform: translateX(20%);
   }
 }
+@keyframes getin-anim-mobile {
+  from {
+    transform: translateX(20%);
+    transform-origin: right;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @keyframes touch-anim {
   from {
     transform: translateX(35%);
@@ -38,6 +47,15 @@ Description: Art Director and Graphic Designer Marussia Lamy's portfolio
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes touch-anim-mobile {
+  from {
+    transform: translateX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: translateX(25%);
   }
 }
 @keyframes withme-anim {
@@ -49,6 +67,15 @@ Description: Art Director and Graphic Designer Marussia Lamy's portfolio
     transform: translateX(10%);
   }
 }
+@keyframes withme-anim-mobile {
+  from {
+    transform: translateX(10%);
+    transform-origin: right;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .anim-up {
   animation: anim-up ease-out 800ms both;
 }
@@ -56,13 +83,28 @@ Description: Art Director and Graphic Designer Marussia Lamy's portfolio
 .getin-is-animated {
   animation: getin-anim ease-out 800ms both;
 }
+@media screen and (max-width: 992px) {
+  .getin-is-animated {
+    animation: getin-anim-mobile ease-out 800ms both;
+  }
+}
 
 .touch-is-animated {
   animation: touch-anim ease-out 800ms both;
 }
+@media screen and (max-width: 992px) {
+  .touch-is-animated {
+    animation: touch-anim-mobile ease-out 800ms both;
+  }
+}
 
 .withme-is-animated {
   animation: withme-anim ease-out 800ms both;
+}
+@media screen and (max-width: 992px) {
+  .withme-is-animated {
+    animation: withme-anim-mobile ease-out 800ms both;
+  }
 }
 
 body {
@@ -97,6 +139,12 @@ body.about .scroll-down {
   padding-bottom: 1rem;
   overflow-x: hidden;
   position: relative;
+}
+@media screen and (max-width: 992px) {
+  .main-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .custom-cursor {
@@ -165,6 +213,12 @@ html.is-animating .transition-swipe {
   height: 150px;
   font-size: 3.4rem;
 }
+@media screen and (max-width: 992px) {
+  .arrow {
+    width: 60px;
+    height: 60px;
+  }
+}
 .arrow--small {
   border-radius: 50%;
   transition: all 250ms ease-in-out;
@@ -174,6 +228,12 @@ html.is-animating .transition-swipe {
   width: 50px;
   height: 50px;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 992px) {
+  .arrow--small {
+    width: 45px;
+    height: 45px;
+  }
 }
 .arrow--right {
   transform: rotate(180deg);
@@ -203,11 +263,23 @@ html.is-animating .transition-swipe {
   height: auto;
   color: #FD5B20;
 }
+@media screen and (max-width: 992px) {
+  .scroll-down {
+    top: 200px;
+    right: -20%;
+  }
+}
 .scroll-down__elt {
   position: relative;
   width: 200px;
   height: 200px;
   animation: rotate 10s linear infinite;
+}
+@media screen and (max-width: 992px) {
+  .scroll-down__elt {
+    width: 160px;
+    height: 160px;
+  }
 }
 .scroll-down__elt span {
   height: 100px;
@@ -216,6 +288,11 @@ html.is-animating .transition-swipe {
   left: 50%;
   top: 0;
   transform-origin: bottom center;
+}
+@media screen and (max-width: 992px) {
+  .scroll-down__elt span {
+    height: 80px;
+  }
 }
 .scroll-down__elt .char1 {
   transform: rotate(12.8571428571deg);
@@ -312,6 +389,12 @@ html.is-animating .transition-swipe {
   transform-origin: left;
   transition: transform 250ms ease-out;
 }
+@media screen and (max-width: 992px) {
+  .single-project-nav {
+    transform: translateX(-100%);
+    width: 100%;
+  }
+}
 .single-project-nav.show {
   transform: translateX(0);
 }
@@ -329,6 +412,11 @@ html.is-animating .transition-swipe {
   background-color: #FD5B20;
   font-size: 3.4rem;
 }
+@media screen and (max-width: 992px) {
+  .single-project-nav__category__link {
+    font-size: 2.5rem;
+  }
+}
 .single-project-nav__category__link:hover {
   color: #282828;
 }
@@ -341,6 +429,12 @@ html.is-animating .transition-swipe {
   padding-right: 2rem;
   padding-top: 1rem;
   z-index: 999;
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .navbar__brand {
   color: #282828;
@@ -466,6 +560,11 @@ header.about .navbar__link:active {
   transition: color 250ms ease-in-out;
   color: #282828;
 }
+@media screen and (max-width: 992px) {
+  .home__category__link {
+    font-size: 13.8vw;
+  }
+}
 .home__category__link__text-wrap {
   transform: translateX(0);
   transform-origin: left;
@@ -548,6 +647,15 @@ header.about .navbar__link:active {
   transition: all 250ms ease-in-out;
   animation: rotate 5s linear infinite;
 }
+@media screen and (max-width: 992px) {
+  .footer__contact__cta {
+    width: 80px;
+    height: 80px;
+    right: 0;
+    bottom: 60%;
+    font-size: 1rem;
+  }
+}
 .footer__contact__cta:hover {
   background-color: #ECECEC;
 }
@@ -558,9 +666,19 @@ header.about .navbar__link:active {
   font-size: 1rem;
   border-top: solid 3px #282828;
 }
+@media screen and (max-width: 992px) {
+  .footer__social {
+    text-align: center;
+  }
+}
 .footer__social__socials__list {
   list-style: none;
   display: flex;
+}
+@media screen and (max-width: 992px) {
+  .footer__social__socials__list {
+    justify-content: center;
+  }
 }
 .footer__social__socials__list__item__link {
   color: #282828;
@@ -693,12 +811,22 @@ header.about .navbar__link:active {
 .archive__hero__title > h1 {
   font-size: 14.3vw;
 }
+@media screen and (max-width: 992px) {
+  .archive__hero__title > h1 {
+    font-size: 13.8vw;
+  }
+}
 .archive__hero__links__link {
   text-decoration: none;
   transition: color 250ms ease-in-out;
   font-size: 1.2rem;
   width: max-content;
   color: #6F6D5F;
+}
+@media screen and (max-width: 992px) {
+  .archive__hero__links__link {
+    font-size: 1rem;
+  }
 }
 .archive__hero__links__link:hover {
   color: #A19E91;
@@ -710,18 +838,40 @@ header.about .navbar__link:active {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+@media screen and (max-width: 992px) {
+  .archive__grid {
+    padding-top: 5rem;
+    padding-bottom: 0;
+  }
+}
 .archive__grid__project {
   height: 600px;
+}
+@media screen and (max-width: 992px) {
+  .archive__grid__project {
+    height: auto;
+  }
 }
 .archive__grid__project__thumbnail {
   order: 2;
   height: 100%;
+}
+@media screen and (max-width: 992px) {
+  .archive__grid__project__thumbnail {
+    order: 1;
+    height: 400px;
+  }
 }
 .archive__grid__project__thumbnail__container {
   height: 110%;
   transform: translateY(-5%);
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 992px) {
+  .archive__grid__project__thumbnail__container {
+    height: 100%;
+  }
 }
 .archive__grid__project__thumbnail__container::after {
   content: "";
@@ -753,6 +903,12 @@ header.about .navbar__link:active {
 .archive__grid__project__info {
   order: 1;
 }
+@media screen and (max-width: 992px) {
+  .archive__grid__project__info {
+    order: 2;
+    transform: translateY(-37px);
+  }
+}
 .archive__grid__project__info.odd {
   order: 2;
 }
@@ -761,6 +917,11 @@ header.about .navbar__link:active {
 }
 .archive__grid__project__info__title {
   font-size: 3.4rem;
+}
+@media screen and (max-width: 992px) {
+  .archive__grid__project__info__title {
+    font-size: 2.5rem;
+  }
 }
 .archive__grid__project__info__link {
   font-size: 1rem;
@@ -793,10 +954,21 @@ header.about .navbar__link:active {
   font-size: 7.8vw;
   z-index: 1;
 }
+@media screen and (max-width: 992px) {
+  .project__hero__title {
+    font-size: 11vw;
+  }
+}
 .project__hero__thumbnail {
   height: 800px;
   transform: translateY(-65px);
   z-index: -1;
+}
+@media screen and (max-width: 992px) {
+  .project__hero__thumbnail {
+    height: 400px;
+    transform: translateY(-25px);
+  }
 }
 .project__hero__thumbnail__img {
   width: 100%;
@@ -813,12 +985,23 @@ header.about .navbar__link:active {
   font-size: 6.5vw;
   line-height: 1;
 }
+@media screen and (max-width: 992px) {
+  .project__info__subtitle {
+    line-height: 1.2;
+  }
+}
 .project__details {
   border-bottom: solid 3px #ECECEC;
 }
 .project__details__description {
   font-size: 3.4rem;
   line-height: 1;
+}
+@media screen and (max-width: 992px) {
+  .project__details__description {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
 }
 .project__details__list {
   border-top: solid 3px #ECECEC;
@@ -833,6 +1016,11 @@ header.about .navbar__link:active {
 }
 .project__gallery__image {
   height: 700px;
+}
+@media screen and (max-width: 992px) {
+  .project__gallery__image {
+    height: 400px;
+  }
 }
 .project__gallery__image__img {
   width: 100%;
@@ -870,6 +1058,11 @@ header.about .navbar__link:active {
   font-size: 1.2rem;
   animation: anim-up ease-out 800ms both;
   animation-delay: 150ms;
+}
+@media screen and (max-width: 992px) {
+  .contact__taglines {
+    line-height: 1.2;
+  }
 }
 .contact__option {
   border-bottom: solid 3px #282828;
@@ -912,9 +1105,19 @@ header.about .navbar__link:active {
   font-size: 22.2vw;
   z-index: 1;
 }
+@media screen and (max-width: 992px) {
+  .about__hero__title {
+    font-size: 21.9vw;
+  }
+}
 .about__hero__thumbnail {
   height: 800px;
   position: relative;
+}
+@media screen and (max-width: 992px) {
+  .about__hero__thumbnail {
+    height: 400px;
+  }
 }
 .about__hero__thumbnail__wrapper {
   width: 100%;
@@ -922,10 +1125,20 @@ header.about .navbar__link:active {
   transform: translateY(-15%);
   z-index: -1;
 }
+@media screen and (max-width: 992px) {
+  .about__hero__thumbnail__wrapper {
+    transform: translateY(-45px);
+  }
+}
 .about__hero__thumbnail__wrapper__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .about__hero__thumbnail > .scroll-down {
+    top: 100px;
+  }
 }
 .about__hero__name {
   font-size: 22.5vw;
@@ -938,6 +1151,11 @@ header.about .navbar__link:active {
   font-size: 6.5vw;
   line-height: 1;
 }
+@media screen and (max-width: 992px) {
+  .about__tagline__content {
+    line-height: 1.2;
+  }
+}
 .about__description {
   border-bottom: solid 3px #ECECEC;
 }
@@ -945,8 +1163,19 @@ header.about .navbar__link:active {
   font-size: 3.4rem;
   line-height: 1;
 }
+@media screen and (max-width: 992px) {
+  .about__description__title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+}
 .about__description__text {
   font-size: 1.2rem;
+}
+@media screen and (max-width: 992px) {
+  .about__description__text {
+    line-height: 1.2;
+  }
 }
 .about__services {
   border-bottom: solid 3px #ECECEC;
@@ -972,6 +1201,12 @@ header.about .navbar__link:active {
 }
 .about__cv__list__item {
   font-size: 1.2rem;
+}
+@media screen and (max-width: 992px) {
+  .about__cv__list__item {
+    font-size: 1rem;
+    word-break: break-word;
+  }
 }
 .about__cv__list__item:not(.last) {
   border-bottom: solid 1px #ECECEC;

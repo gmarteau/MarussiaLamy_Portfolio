@@ -4,12 +4,21 @@
 
 .getin-is-animated {
     @include footer-anim(getin-anim);
+    @include mobile {
+        @include footer-anim(getin-anim-mobile);
+    }
 }
 
 .touch-is-animated {
     @include footer-anim(touch-anim);
+    @include mobile {
+        @include footer-anim(touch-anim-mobile);
+    }
 }
 
 .withme-is-animated {
     @include footer-anim(withme-anim);
+    @include mobile {
+        @include footer-anim(withme-anim-mobile);
+    }
 }

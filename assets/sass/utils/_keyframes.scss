@@ -29,6 +29,16 @@
     }
 }
 
+@keyframes getin-anim-mobile {
+    from {
+        transform: translateX(20%);
+        transform-origin: right;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 @keyframes touch-anim {
     from {
         transform: translateX(35%);
@@ -39,6 +49,16 @@
     }
 }
 
+@keyframes touch-anim-mobile {
+    from {
+        transform: translateX(0);
+        transform-origin: left;
+    }
+    to {
+        transform: translateX(25%);
+    }
+}
+
 @keyframes withme-anim {
     from {
         transform: translateX(0);
@@ -46,5 +66,15 @@
     }
     to {
         transform: translateX(10%);
+    }
+}
+
+@keyframes withme-anim-mobile {
+    from {
+        transform: translateX(10%);
+        transform-origin: right;
+    }
+    to {
+        transform: translateX(0);
     }
 }

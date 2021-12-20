@@ -3,6 +3,10 @@
     padding-right: 2rem;
     padding-top: 1rem;
     z-index: 999;
+    @include mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     &__brand {
         color: $clr-txt;
         &:hover {

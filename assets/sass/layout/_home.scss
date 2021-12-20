@@ -23,6 +23,9 @@
             line-height: 1;
             @include link-transition;
             color: $clr-txt;
+            @include mobile {
+                font-size: $font-title-mobile;
+            }
             &__text-wrap {
                 @include home-link-transition;
             }

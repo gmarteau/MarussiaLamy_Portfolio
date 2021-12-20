@@ -5,11 +5,18 @@
         &__title {
             font-size: $font-title*1.2;
             z-index: 1;
+            @include mobile {
+                font-size: 11vw;
+            }
         }
         &__thumbnail {
             height: 800px;
             transform: translateY(-65px);
             z-index: -1;
+            @include mobile {
+                height: 400px;
+                transform: translateY(-25px);
+            }
             &__img {
                 @include img-cover;
             }
@@ -23,6 +30,9 @@
         &__subtitle {
             font-size: $font-title;
             line-height: 1;
+            @include mobile {
+                line-height: 1.2;
+            }
         }
     }
     &__details {
@@ -30,6 +40,10 @@
         &__description {
             font-size: $font-big;
             line-height: 1;
+            @include mobile {
+                font-size: $font-big-mobile*.6;
+                line-height: 1.2;
+            }
         }
         &__list {
             border-top: solid 3px $clr-txt-dark;
@@ -46,6 +60,9 @@
         border-bottom: solid 3px $clr-txt-dark;
         &__image {
             height: 700px;
+            @include mobile {
+                height: 400px;
+            }
             &__img {
                 @include img-cover;
             }

@@ -1,7 +1,15 @@
 .arrow {
     @include arrow;
+    @include mobile {
+        width: 60px;
+        height: 60px;
+    }
     &--small {
         @include arrow('small');
+        @include mobile {
+            width: $cta-small-size*0.9;
+            height: $cta-small-size*0.9;
+        }
     }
     &--right {
         transform: rotate(180deg);

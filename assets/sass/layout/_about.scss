@@ -4,18 +4,32 @@
         &__title {
             font-size: 22.2vw;
             z-index: 1;
+            @include mobile {
+                font-size: 21.9vw;
+            }
         }
         &__thumbnail {
             height: 800px;
             position: relative;
+            @include mobile {
+                height: 400px;
+            }
             &__wrapper {
                 width: 100%;
                 height: 130%;
                 transform: translateY(-15%);
                 z-index: -1;
+                @include mobile {
+                    transform: translateY(-45px);
+                }
                 &__img {
                     @include img-cover;
                 }    
+            }
+            & > .scroll-down {
+                @include mobile {
+                    top: 100px;
+                }
             }
         }
         &__name {
@@ -28,6 +42,9 @@
         &__content {
             font-size: $font-title;
             line-height: 1;
+            @include mobile {
+                line-height: 1.2;
+            }
         }
     }
     &__description {
@@ -35,9 +52,16 @@
         &__title {
             font-size: $font-big;
             line-height: 1;
+            @include mobile {
+                font-size: $font-big-mobile*.6;
+                line-height: 1.2;
+            }
         }
         &__text {
             font-size: $font-reg;
+            @include mobile {
+                line-height: 1.2;
+            }
         }
     }
     &__services {
@@ -66,6 +90,10 @@
             border-top: solid 3px $clr-txt-dark;
             &__item {
                 font-size: $font-reg;
+                @include mobile {
+                    font-size: $font-small;
+                    word-break: break-word;
+                }
                 &:not(.last) {
                     border-bottom: solid 1px $clr-txt-dark;
                 }

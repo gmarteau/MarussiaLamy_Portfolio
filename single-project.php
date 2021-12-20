@@ -22,7 +22,7 @@
 
     <div class="row project__details py-5 d-flex flex-column align-items-end">
         <p id="projectDescription" class="col-12 project__details__description px-0"><?= get_field('description'); ?></p>
-        <div class="col-6 pe-0 ps-5 py-5">
+        <div class="col-12 col-lg-6 pe-0 ps-0 ps-lg-5 pt-3 pb-0 py-lg-5">
             <ul id="projectDetails" class="project__details__list p-0 m-0">
                 <li class="project__details__list__item d-flex py-3">
                     <span class="col-6 d-block">Client:</span>
@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    <div class="row project__gallery py-5">
+    <div class="row project__gallery py-3 py-lg-5">
     <?php
     $images = get_field('gallery');
     $i = 1;
@@ -58,8 +58,8 @@
     </div>
 
     <div class="row project__others py-5">
-        <div class="col-12 project__others__title d-flex align-items-baseline">
-            <h3 class="col-11 project__others__title__content px-0 py-5 mt-5">Autres projets</h3>
+        <div class="col-12 project__others__title d-flex align-items-baseline px-0">
+            <h3 class="col-11 project__others__title__content px-0 py-0 mt-0 py-lg-5 mt-lg-5">Autres projets</h3>
             <a href="#page-top" class="col-1 d-block chevron-cta chevron-cta--up" data-no-swup><i class="fas fa-chevron-up"></i></a>
         </div>
 

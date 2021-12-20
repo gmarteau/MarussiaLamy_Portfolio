@@ -35,6 +35,13 @@
             align-items: center;
             transition: all $link-hover-transition ease-in-out;
             @include rotate-infinite;
+            @include mobile {
+                width: $contact-cta-size-mobile;
+                height: $contact-cta-size-mobile;
+                right: 0;
+                bottom: 60%;
+                font-size: $font-small;
+            }
             &:hover {
                 background-color: $clr-txt-dark;
             }
@@ -46,10 +53,16 @@
     &__social {
         font-size: $font-small;
         border-top: solid 3px $clr-txt;
+        @include mobile {
+            text-align: center;
+        }
         &__socials {
             &__list {
                 list-style: none;
                 display: flex;
+                @include mobile {
+                    justify-content: center;
+                }
                 &__item {
                     &__link {
                         color: $clr-txt;

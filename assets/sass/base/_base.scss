@@ -30,6 +30,10 @@ body {
     padding-bottom: 1rem;
     overflow-x: hidden;
     position: relative;
+    @include mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .custom-cursor {

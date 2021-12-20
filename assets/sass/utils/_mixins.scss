@@ -100,3 +100,9 @@
 @mixin footer-anim($keyframes: getin-anim) {
     animation: $keyframes ease-out $anim-up both;
 }
+
+@mixin mobile {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}

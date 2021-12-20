@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post() ?>
-    <div class="row contact__title pb-5">
+    <div class="row contact__title py-5 pt-lg-0 pb-lg-5">
         <h1 class="col contact__title__text text-center px-0"><?= get_the_title(); ?></h1>
     </div>
 
-    <div class="row contact__taglines py-5">
-        <p class="col-6 ps-0 pe-4"><?= get_field('tagline_01'); ?></p>
-        <p class="col-6 pe-0 ps-4"><?= get_field('tagline_02'); ?></p>
+    <div class="row contact__taglines py-3 py-lg-5">
+        <p class="col-12 col-lg-6 px-0 ps-lg-0 pe-lg-4"><?= get_field('tagline_01'); ?></p>
+        <p class="col-12 col-lg-6 px-0 pe-lg-0 ps-lg-4"><?= get_field('tagline_02'); ?></p>
     </div>
 
     <div id="contactEmail" class="row contact__option">
