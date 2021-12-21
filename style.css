@@ -213,10 +213,16 @@ html.is-animating .transition-swipe {
   height: 150px;
   font-size: 3.4rem;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .arrow {
     width: 60px;
     height: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .arrow {
+    width: 100px;
+    height: 100px;
   }
 }
 .arrow--small {
@@ -229,10 +235,16 @@ html.is-animating .transition-swipe {
   height: 50px;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .arrow--small {
     width: 45px;
     height: 45px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .arrow--small {
+    width: 60px;
+    height: 60px;
   }
 }
 .arrow--right {
@@ -263,10 +275,16 @@ html.is-animating .transition-swipe {
   height: auto;
   color: #FD5B20;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .scroll-down {
     top: 200px;
     right: -20%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .scroll-down {
+    top: 250px;
+    right: -10%;
   }
 }
 .scroll-down__elt {
@@ -647,12 +665,21 @@ header.about .navbar__link:active {
   transition: all 250ms ease-in-out;
   animation: rotate 5s linear infinite;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .footer__contact__cta {
     width: 80px;
     height: 80px;
     right: 0;
     bottom: 60%;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footer__contact__cta {
+    width: 120px;
+    height: 120px;
+    right: 3%;
+    bottom: 66%;
     font-size: 1rem;
   }
 }
@@ -856,10 +883,16 @@ header.about .navbar__link:active {
   order: 2;
   height: 100%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .archive__grid__project__thumbnail {
     order: 1;
     height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .archive__grid__project__thumbnail {
+    order: 1;
+    height: 500px;
   }
 }
 .archive__grid__project__thumbnail__container {
@@ -903,10 +936,16 @@ header.about .navbar__link:active {
 .archive__grid__project__info {
   order: 1;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .archive__grid__project__info {
     order: 2;
     transform: translateY(-37px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .archive__grid__project__info {
+    order: 2;
+    transform: translateY(-41px);
   }
 }
 .archive__grid__project__info.odd {
@@ -964,10 +1003,16 @@ header.about .navbar__link:active {
   transform: translateY(-65px);
   z-index: -1;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .project__hero__thumbnail {
     height: 400px;
     transform: translateY(-25px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .project__hero__thumbnail {
+    height: 500px;
+    transform: translateY(-50px);
   }
 }
 .project__hero__thumbnail__img {
@@ -1017,9 +1062,14 @@ header.about .navbar__link:active {
 .project__gallery__image {
   height: 700px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .project__gallery__image {
     height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .project__gallery__image {
+    height: 500px;
   }
 }
 .project__gallery__image__img {
@@ -1114,9 +1164,14 @@ header.about .navbar__link:active {
   height: 800px;
   position: relative;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .about__hero__thumbnail {
     height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .about__hero__thumbnail {
+    height: 600px;
   }
 }
 .about__hero__thumbnail__wrapper {
@@ -1125,9 +1180,14 @@ header.about .navbar__link:active {
   transform: translateY(-15%);
   z-index: -1;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .about__hero__thumbnail__wrapper {
     transform: translateY(-45px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .about__hero__thumbnail__wrapper {
+    transform: translateY(-80px);
   }
 }
 .about__hero__thumbnail__wrapper__img {
@@ -1135,9 +1195,14 @@ header.about .navbar__link:active {
   height: 100%;
   object-fit: cover;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .about__hero__thumbnail > .scroll-down {
     top: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .about__hero__thumbnail > .scroll-down {
+    top: 200px;
   }
 }
 .about__hero__name {

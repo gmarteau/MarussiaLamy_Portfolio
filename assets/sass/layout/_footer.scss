@@ -35,11 +35,18 @@
             align-items: center;
             transition: all $link-hover-transition ease-in-out;
             @include rotate-infinite;
-            @include mobile {
+            @include mobile-only {
                 width: $contact-cta-size-mobile;
                 height: $contact-cta-size-mobile;
                 right: 0;
                 bottom: 60%;
+                font-size: $font-small;
+            }
+            @include tablet-only {
+                width: 120px;
+                height: 120px;
+                right: 3%;
+                bottom: 66%;
                 font-size: $font-small;
             }
             &:hover {

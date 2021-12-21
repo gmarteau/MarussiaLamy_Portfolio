@@ -11,24 +11,33 @@
         &__thumbnail {
             height: 800px;
             position: relative;
-            @include mobile {
+            @include mobile-only {
                 height: 400px;
+            }
+            @include tablet-only {
+                height: 600px;
             }
             &__wrapper {
                 width: 100%;
                 height: 130%;
                 transform: translateY(-15%);
                 z-index: -1;
-                @include mobile {
+                @include mobile-only {
                     transform: translateY(-45px);
+                }
+                @include tablet-only {
+                    transform: translateY(-80px);
                 }
                 &__img {
                     @include img-cover;
                 }    
             }
             & > .scroll-down {
-                @include mobile {
+                @include mobile-only {
                     top: 100px;
+                }
+                @include tablet-only {
+                    top: 200px;
                 }
             }
         }

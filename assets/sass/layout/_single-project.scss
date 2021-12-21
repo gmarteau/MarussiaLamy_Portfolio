@@ -13,9 +13,13 @@
             height: 800px;
             transform: translateY(-65px);
             z-index: -1;
-            @include mobile {
+            @include mobile-only {
                 height: 400px;
                 transform: translateY(-25px);
+            }
+            @include tablet-only {
+                height: 500px;
+                transform: translateY(-50px);
             }
             &__img {
                 @include img-cover;
@@ -60,8 +64,11 @@
         border-bottom: solid 3px $clr-txt-dark;
         &__image {
             height: 700px;
-            @include mobile {
+            @include mobile-only {
                 height: 400px;
+            }
+            @include tablet-only {
+                height: 500px;
             }
             &__img {
                 @include img-cover;

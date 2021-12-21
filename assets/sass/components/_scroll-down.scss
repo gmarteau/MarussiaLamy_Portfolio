@@ -5,9 +5,13 @@
     width: auto;
     height: auto;
     color: $clr-elements;
-    @include mobile {
+    @include mobile-only {
         top: 200px;
         right: -20%;
+    }
+    @include tablet-only {
+        top: 250px;
+        right: -10%;
     }
     &__elt {
         position: relative;

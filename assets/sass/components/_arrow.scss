@@ -1,14 +1,22 @@
 .arrow {
     @include arrow;
-    @include mobile {
+    @include mobile-only {
         width: 60px;
         height: 60px;
     }
+    @include tablet-only {
+        width: 100px;
+        height: 100px;
+    }
     &--small {
         @include arrow('small');
-        @include mobile {
+        @include mobile-only {
             width: $cta-small-size*0.9;
             height: $cta-small-size*0.9;
+        }
+        @include tablet-only {
+            width: 60px;
+            height: 60px;
         }
     }
     &--right {

@@ -43,9 +43,13 @@
             &__thumbnail {
                 order: 2;
                 height: 100%;
-                @include mobile {
+                @include mobile-only {
                     order: 1;
                     height: 400px;
+                }
+                @include tablet-only {
+                    order: 1;
+                    height: 500px;
                 }
                 &__container {
                     height: 110%;
@@ -85,9 +89,13 @@
             }
             &__info {
                 order: 1;
-                @include mobile {
+                @include mobile-only {
                     order: 2;
                     transform: translateY(-37px);
+                }
+                @include tablet-only {
+                    order: 2;
+                    transform: translateY(-41px);
                 }
                 &.odd {
                     order: 2;
