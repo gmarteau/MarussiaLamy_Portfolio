@@ -1,0 +1,29 @@
+.error {
+    &__title {
+        font-size: $font-huge;
+        @include mobile {
+            font-size: 30vw;
+        }
+    }
+    &__subtitle {
+        font-size: $font-big;
+        @include mobile {
+            font-size: 1.7rem;
+        }
+    }
+    &__link {
+        width: max-content;
+        @include link-transition;
+        color: $clr-txt;
+        font-size: 1.5rem;
+        @include mobile {
+            font-size: $font-reg;
+        }
+        &:hover {
+            color: $clr-active;
+        }
+        &:active {
+            color: $clr-active;
+        }
+    }
+}

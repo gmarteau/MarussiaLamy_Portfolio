@@ -1305,4 +1305,39 @@ header.about .navbar__link:active {
   border-bottom: solid 1px #ECECEC;
 }
 
+.error__title {
+  font-size: 20vw;
+}
+@media screen and (max-width: 992px) {
+  .error__title {
+    font-size: 30vw;
+  }
+}
+.error__subtitle {
+  font-size: 3.4rem;
+}
+@media screen and (max-width: 992px) {
+  .error__subtitle {
+    font-size: 1.7rem;
+  }
+}
+.error__link {
+  width: max-content;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+  color: #282828;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 992px) {
+  .error__link {
+    font-size: 1.2rem;
+  }
+}
+.error__link:hover {
+  color: #A19E91;
+}
+.error__link:active {
+  color: #A19E91;
+}
+
 /*# sourceMappingURL=style.css.map */
