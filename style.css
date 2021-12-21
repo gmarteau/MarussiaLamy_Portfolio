@@ -464,6 +464,12 @@ html.is-animating .transition-swipe {
   font-size: 1.2rem;
   color: #282828;
 }
+@media screen and (max-width: 992px) {
+  .navbar__link {
+    background-color: #ECECEC;
+    width: max-content;
+  }
+}
 .navbar__link.active {
   color: #A19E91;
 }
@@ -483,6 +489,12 @@ header.archive .navbar__brand:hover {
 header.archive .navbar__link {
   color: #6F6D5F;
 }
+@media screen and (max-width: 992px) {
+  header.archive .navbar__link {
+    background-color: #6F6D5F;
+    color: #ECECEC;
+  }
+}
 header.archive .navbar__link.active {
   color: #A19E91;
 }
@@ -501,6 +513,11 @@ header.single-project .navbar__brand:hover {
 header.single-project .navbar__link {
   color: #ECECEC;
 }
+@media screen and (max-width: 992px) {
+  header.single-project .navbar__link {
+    color: #282828;
+  }
+}
 header.single-project .navbar__link.active {
   color: #FD5B20;
 }
@@ -509,6 +526,12 @@ header.single-project .navbar__link:hover {
 }
 header.single-project .navbar__link:active {
   color: #FD5B20;
+}
+@media screen and (max-width: 992px) {
+  header.contact .navbar__link {
+    background-color: #282828;
+    color: #FD5B20;
+  }
 }
 header.contact .navbar__link.active {
   color: #ECECEC;
@@ -527,6 +550,11 @@ header.about .navbar__brand:hover {
 }
 header.about .navbar__link {
   color: #ECECEC;
+}
+@media screen and (max-width: 992px) {
+  header.about .navbar__link {
+    color: #6F6D5F;
+  }
 }
 header.about .navbar__link.active {
   color: #A19E91;

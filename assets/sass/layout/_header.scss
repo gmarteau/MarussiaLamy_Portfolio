@@ -16,6 +16,10 @@
     &__link {
         font-size: $font-reg;
         color: $clr-txt;
+        @include mobile {
+            background-color: $clr-txt-dark;
+            width: max-content;
+        }
         &.active {
             color: $clr-active;
         }
@@ -39,6 +43,10 @@ header {
             }
             &__link {
                 color: $clr-bg;
+                @include mobile {
+                    background-color: $clr-bg;
+                    color: $clr-txt-dark;
+                }
                 &.active {
                     color: $clr-active;
                 }
@@ -61,6 +69,9 @@ header {
             }
             &__link {
                 color: $clr-txt-dark;
+                @include mobile {
+                    color: $clr-txt;
+                }
                 &.active {
                     color: $clr-elements;
                 }
@@ -76,6 +87,10 @@ header {
     &.contact {
         & .navbar {
             &__link {
+                @include mobile {
+                    background-color: $clr-txt;
+                    color: $clr-elements;
+                }
                 &.active {
                     color: $clr-txt-dark;
                 }
@@ -98,6 +113,9 @@ header {
             }
             &__link {
                 color: $clr-txt-dark;
+                @include mobile {
+                    color: $clr-bg;
+                }
                 &.active {
                     color: $clr-active;
                 }

@@ -32,14 +32,14 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto">
+                        <div class="navbar-nav ms-auto d-flex align-items-end pt-3 pt-lg-0">
                             <?php
                             $menuItems = wp_get_nav_menu_items('header');
                             if ($menuItems) :
                             foreach ($menuItems as $menuItem) :
                                 $isActivePage = $menuItem->url === get_permalink() ? true : false;
                             ?>
-                                <a class="nav-link ms-4 navbar__link <?= $isActivePage ? 'active' : ''; ?>" <?= $isActivePage ? 'aria-current="page"' : ''; ?>  href="<?= $menuItem->url; ?>"><?= $menuItem->title; ?></a>
+                                <a class="nav-link ms-4 my-2 px-2 me-3 me-lg-0 px-lg-0 my-lg-0 navbar__link <?= $isActivePage ? 'active' : ''; ?>" <?= $isActivePage ? 'aria-current="page"' : ''; ?>  href="<?= $menuItem->url; ?>"><?= $menuItem->title; ?></a>
                             <?php endforeach; endif; ?>
                         </div>
                     </div>
