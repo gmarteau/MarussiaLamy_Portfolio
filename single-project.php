@@ -25,19 +25,19 @@
         <div class="col-12 col-lg-6 pe-0 ps-0 ps-lg-5 pt-3 pb-0 py-lg-5">
             <ul id="projectDetails" class="project__details__list p-0 m-0">
                 <li class="project__details__list__item d-flex py-3">
-                    <span class="col-6 d-block">Client:</span>
+                    <span class="col-6 d-block">Client :</span>
                     <span class="col-6 d-block"><?= get_field('client'); ?></span>
                 </li>
                 <li class="project__details__list__item d-flex py-3">
-                    <span class="col-6 d-block">Année:</span>
+                    <span class="col-6 d-block">Année :</span>
                     <span class="col-6 d-block"><?= get_field('year'); ?></span>
                 </li>
                 <li class="project__details__list__item d-flex py-3">
-                    <span class="col-6 d-block">Agence:</span>
+                    <span class="col-6 d-block">Agence :</span>
                     <span class="col-6 d-block"><?= get_field('agency'); ?></span>
                 </li>
                 <li class="project__details__list__item last d-flex py-3">
-                    <span class="col-6 d-block">Mon rôle:</span>
+                    <span class="col-6 d-block">Mon rôle :</span>
                     <span class="col-6 d-block"><?= get_field('role'); ?></span>
                 </li>
             </ul>

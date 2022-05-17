@@ -13,7 +13,7 @@
     <div id="contactEmail" class="row contact__option">
         <a href="mailto:<?= get_option('admin_email') ?>" class="col-12 contact__option__link custom-cursor p-0 d-flex justify-content-between align-items-center">
             Email
-            <img class="arrow arrow--right" src="<?= get_template_directory_uri() . '/assets/images/arrow.svg'; ?>" alt="Flèche pointant vers la droite" />
+            <img class="arrow" src="<?= get_template_directory_uri() . '/assets/images/arrow-maru.svg'; ?>" alt="Flèche pointant vers la droite" />
         </a>
     </div>
 
@@ -30,7 +30,7 @@
         <li id="contactSocial--<?= $i; ?>" class="col-12 contact__option p-0">
             <a href="<?= $social->url; ?>" class="col-12 contact__option__link custom-cursor p-0 d-flex justify-content-between align-items-center">
                 <?= $social->title; ?>
-                <img class="arrow arrow--right" src="<?= get_template_directory_uri() . '/assets/images/arrow.svg'; ?>" alt="Flèche pointant vers la droite" />
+                <img class="arrow" src="<?= get_template_directory_uri() . '/assets/images/arrow-maru.svg'; ?>" alt="Flèche pointant vers la droite" />
             </a>
         </li>
         <?php $i++; ?>

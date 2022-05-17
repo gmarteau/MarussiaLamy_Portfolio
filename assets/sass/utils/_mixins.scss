@@ -69,14 +69,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: .4rem;        
     @if ($size == 'small') {
         width: $cta-small-size;
         height: $cta-small-size;
-        font-size: $font-reg;        
     } @else {
         width: $cta-med-size;
         height: $cta-med-size;
-        font-size: $font-big;
     }
 }
 
