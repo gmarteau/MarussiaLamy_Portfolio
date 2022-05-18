@@ -46,6 +46,60 @@
 
     <div class="row project__gallery py-3 py-lg-5">
     <?php
+    $vimeo = get_field('vimeo');
+    if ($vimeo) :
+    ?>
+        <div id="projectVimeo" class="col-12 project__gallery__embed my-4 px-0">
+            <?= $vimeo ?>
+        </div>
+    <?php endif; ?>
+    <?php
+    $youtube = get_field('youtube');
+    if ($youtube) :
+    ?>
+        <div id="projectYoutube" class="col-12 project__gallery__embed my-4 px-0">
+            <?= $youtube ?>
+        </div>
+    <?php endif; ?>
+    <?php
+    $squares = get_field('squares');
+    $squares = array_filter($squares, function($square) {
+        return $square;
+    });
+    if ($squares) :
+    ?>
+        <div id="projectSquares" class="col-12 my-4 px-0">
+            <div class="row">
+            <?php
+            $length = count($squares);
+            $colSize = 12 / $length;
+
+            if (wp_is_mobile()) {
+                $colSize = 12;
+            }
+
+            $i = 1;
+            
+            foreach ($squares as $square) : if ($square) :
+            ?>
+                <?php $isLastItem = $i === $length; ?>
+                <div class="col-<?= strval($colSize) ?> project__gallery__square <?= wp_is_mobile() && !$isLastItem ? 'mb-5' : '' ?>">
+                    <?php if ($square['type'] === 'image') : ?>
+                        <img src="<?= $square['sizes']['medium'] ?>" alt="<?= $square['alt'] ?>" class="project__gallery__square__img" />
+                    <?php elseif ($square['type'] === 'video') : ?>
+                        <div class="project__gallery__square__vidcontainer">
+                            <video controls class="project__gallery__square__vidcontainer__vid">
+                                <source src="<?= $square['url'] ?>" type="<?= $square['mime_type'] ?>">
+                            </video>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <?php $i++; ?>
+            <?php endif; endforeach; ?>
+            </div>
+        </div>
+    <?php endif; ?>
+    <?php
     $images = get_field('gallery');
     $i = 1;
     if ($images) : foreach ($images as $image) : if ($image) :

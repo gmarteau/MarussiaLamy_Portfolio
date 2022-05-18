@@ -119,6 +119,112 @@
             "maxlength": ""
         },
         {
+            "key": "field_628524726ee34",
+            "label": "Vimeo",
+            "name": "vimeo",
+            "type": "oembed",
+            "instructions": "Url de la vidéo",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
+            "key": "field_628524a06ee35",
+            "label": "Youtube",
+            "name": "youtube",
+            "type": "oembed",
+            "instructions": "Url de la vidéo",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
+            "key": "field_628524bd6ee36",
+            "label": "Carrés",
+            "name": "squares",
+            "type": "group",
+            "instructions": "Groupe de vidéos ou images au format carré (maximum 3)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6285250b6ee37",
+                    "label": "Square 01",
+                    "name": "square_01",
+                    "type": "file",
+                    "instructions": "Image ou vidéo",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ".mp4,.avi,.mov,.png,.jpg,.jpeg,.gif"
+                },
+                {
+                    "key": "field_6285255a6ee38",
+                    "label": "Square 02",
+                    "name": "square_02",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ".mp4,.avi,.mov,.png,.jpg,.jpeg,.gif"
+                },
+                {
+                    "key": "field_628525816ee39",
+                    "label": "Square 03",
+                    "name": "square_03",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ".mp4,.avi,.mov,.png,.jpg,.jpeg,.gif"
+                }
+            ]
+        },
+        {
             "key": "field_61af31c00a68f",
             "label": "Galerie",
             "name": "gallery",
@@ -457,5 +563,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639561512
+    "modified": 1652898824
 }

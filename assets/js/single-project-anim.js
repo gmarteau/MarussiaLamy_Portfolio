@@ -11,6 +11,9 @@ if (typeof observer === 'undefined') {
     observer.observe(document.querySelector('#projectInfo'));
     observer.observe(document.querySelector('#projectDescription'));
     observer.observe(document.querySelector('#projectDetails'));
+    observer.observe(document.querySelector('#projectVimeo'));
+    observer.observe(document.querySelector('#projectYoutube'));
+    observer.observe(document.querySelector('#projectSquares'));
     for (let i = 1; i <= 10; i++) {
         if (document.querySelector(`#projectImage--${i}`) !== null) {
             observer.observe(document.querySelector(`#projectImage--${i}`));
@@ -21,6 +24,9 @@ if (typeof observer === 'undefined') {
     observer.observe(document.querySelector('#projectInfo'));
     observer.observe(document.querySelector('#projectDescription'));
     observer.observe(document.querySelector('#projectDetails'));
+    observer.observe(document.querySelector('#projectVimeo'));
+    observer.observe(document.querySelector('#projectYoutube'));
+    observer.observe(document.querySelector('#projectSquares'));
     for (let i = 1; i <= 10; i++) {
         if (document.querySelector(`#projectImage--${i}`) !== null) {
             observer.observe(document.querySelector(`#projectImage--${i}`));
