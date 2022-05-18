@@ -12,6 +12,9 @@
         &:hover {
             color: $clr-txt;
         }
+        &__logo {
+            width: 100px;
+        }
     }
     &__link {
         font-size: $font-reg;

@@ -27,7 +27,18 @@
         ">
             <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
                 <div class="container-fluid px-0">
-                    <a class="navbar-brand navbar__brand" href="<?= get_home_url(); ?>">maru</a>
+                    <a class="navbar-brand navbar__brand" href="<?= get_home_url(); ?>">
+                        <?php
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                         
+                        if ( has_custom_logo() ) {
+                            echo '<img class="navbar__brand__logo" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                        } else {
+                            echo 'maru';
+                        }
+                        ?>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -47,7 +58,7 @@
             </nav>
         </header>
 
-        <main id="page-top" class="container-fluid mt-0 pt-5
+        <main id="page-top" class="container-fluid mt-5 pt-5
             <?= is_page('contact') ? 'contact' : ''; ?>
             <?= is_page('about') ? 'about' : ''; ?>
             <?= is_archive() ? 'archive' : ''; ?>

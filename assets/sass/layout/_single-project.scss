@@ -10,15 +10,13 @@
             }
         }
         &__thumbnail {
-            height: 800px;
+            aspect-ratio: 16 / 9;
             transform: translateY(-65px);
             z-index: -1;
             @include mobile-only {
-                height: 400px;
                 transform: translateY(-25px);
             }
             @include tablet-only {
-                height: 500px;
                 transform: translateY(-50px);
             }
             &__img {
@@ -63,13 +61,7 @@
     &__gallery {
         border-bottom: solid 3px $clr-txt-dark;
         &__image {
-            height: 700px;
-            @include mobile-only {
-                height: 400px;
-            }
-            @include tablet-only {
-                height: 500px;
-            }
+            aspect-ratio: 16 / 9;
             &__img {
                 @include img-cover;
             }
