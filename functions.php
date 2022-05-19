@@ -32,12 +32,7 @@ function marussialamy_register_assets() {
     wp_register_script('swup-scripts-plugin', get_template_directory_uri() . '/node_modules/@swup/scripts-plugin/dist/SwupScriptsPlugin.min.js', [], false, true);
     wp_register_script('swup-init', get_template_directory_uri() . '/assets/js/swup-init.js', ['swup', 'swup-scripts-plugin'], false, true);
     wp_register_script('page-checker', get_template_directory_uri() . '/assets/js/page-checker.js', [], false, true);
-
-    if (is_page('about') || is_singular('project')) {
-        wp_register_script('scroll-down-elt', get_template_directory_uri() . '/assets/js/scroll-down-elt.js', ['jquery-lettering'], false, true);
-        
-        wp_enqueue_script('scroll-down-elt');    
-    }
+    wp_register_script('scroll-down-elt', get_template_directory_uri() . '/assets/js/scroll-down-elt.js', ['jquery-lettering'], false, true);
 
     if (is_singular('project')) {
         wp_register_script('single-project-anim', get_template_directory_uri() . '/assets/js/single-project-anim.js', [], false, true);
@@ -74,6 +69,7 @@ function marussialamy_register_assets() {
     wp_enqueue_script('bootstrap');
     wp_enqueue_script('swup-init');
     wp_enqueue_script('page-checker');
+    wp_enqueue_script('scroll-down-elt');
 }
 
 function marussialamy_handle_swup_scripts( $tag, $handle, $source ) {

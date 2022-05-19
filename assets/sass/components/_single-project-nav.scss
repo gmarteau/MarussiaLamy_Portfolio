@@ -11,8 +11,14 @@
         transform: translateX(-100%);
         width: 100%;
     }
+    @include xl-screen {
+        transform: translateX(-200%);
+    }
     &.show {
         transform: translateX(0);
+        @include xl-screen {
+            transform: translateX(-50%);
+        }
     }
     &__category {
         &__link-wrapper {

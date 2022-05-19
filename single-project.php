@@ -62,28 +62,50 @@
         </div>
     <?php endif; ?>
     <?php
-    $squares = get_field('squares');
-    $squares = array_filter($squares, function($square) {
+    $videoFull = get_field('video_full');
+    if ($videoFull) :
+    ?>
+        <div id="projectFullVid" class="col-12 project__gallery__embed my-4 px-0">
+            <video controls class="project__gallery__embed__vid">
+                <source src="<?= $videoFull['url'] ?>" type="<?= $videoFull['mime_type'] ?>">
+            </video>
+        </div>
+    <?php endif; ?>
+
+    <?php
+    $imagesFirst = get_field('gallery_first');
+    $imgIndex = 1;
+    if ($imagesFirst) : foreach ($imagesFirst as $image) : if ($image) :
+    ?>
+        <div id="projectImage--<?= $imgIndex; ?>" class="col-12 project__gallery__image my-4 px-0">
+            <img src="<?= $image['sizes']['large'] ?>" alt="<?= $image['alt'] ?>" class="project__gallery__image__img" />
+        </div>
+        <?php $imgIndex++; ?>
+    <?php endif; endforeach; endif; ?>
+
+    <?php
+    $squaresFirst = get_field('squares_first');
+    $squaresFirst = array_filter($squaresFirst, function($square) {
         return $square;
     });
-    if ($squares) :
+    if ($squaresFirst) :
     ?>
-        <div id="projectSquares" class="col-12 my-4 px-0">
+        <div id="projectSquaresFirst" class="col-12 my-4 px-0">
             <div class="row">
             <?php
-            $length = count($squares);
-            $colSize = 12 / $length;
+            $lengthFirst = count($squaresFirst);
+            $colSizeFirst = 12 / $lengthFirst;
 
             if (wp_is_mobile()) {
-                $colSize = 12;
+                $colSizeFirst = 12;
             }
 
             $i = 1;
             
-            foreach ($squares as $square) : if ($square) :
+            foreach ($squaresFirst as $square) : if ($square) :
             ?>
-                <?php $isLastItem = $i === $length; ?>
-                <div class="col-<?= strval($colSize) ?> project__gallery__square <?= wp_is_mobile() && !$isLastItem ? 'mb-5' : '' ?>">
+                <?php $isLastItem = $i === $lengthFirst; ?>
+                <div class="col-<?= strval($colSizeFirst) ?> project__gallery__square <?= wp_is_mobile() && !$isLastItem ? 'mb-5' : '' ?>">
                     <?php if ($square['type'] === 'image') : ?>
                         <img src="<?= $square['sizes']['medium'] ?>" alt="<?= $square['alt'] ?>" class="project__gallery__square__img" />
                     <?php elseif ($square['type'] === 'video') : ?>
@@ -99,15 +121,64 @@
             </div>
         </div>
     <?php endif; ?>
+
     <?php
-    $images = get_field('gallery');
-    $i = 1;
-    if ($images) : foreach ($images as $image) : if ($image) :
+    $imagesSecond = get_field('gallery_second');
+    if ($imagesSecond) : foreach ($imagesSecond as $image) : if ($image) :
     ?>
-        <div id="projectImage--<?= $i; ?>" class="col-12 project__gallery__image my-4 px-0">
+        <div id="projectImage--<?= $imgIndex; ?>" class="col-12 project__gallery__image my-4 px-0">
             <img src="<?= $image['sizes']['large'] ?>" alt="<?= $image['alt'] ?>" class="project__gallery__image__img" />
         </div>
-        <?php $i++; ?>
+        <?php $imgIndex++; ?>
+    <?php endif; endforeach; endif; ?>
+
+    <?php
+    $squaresSecond = get_field('squares_second');
+    $squaresSecond = array_filter($squaresSecond, function($square) {
+        return $square;
+    });
+    if ($squaresSecond) :
+    ?>
+        <div id="projectSquaresSecond" class="col-12 my-4 px-0">
+            <div class="row">
+            <?php
+            $lengthSecond = count($squaresSecond);
+            $colSizeSecond = 12 / $lengthSecond;
+
+            if (wp_is_mobile()) {
+                $colSizeSecond = 12;
+            }
+
+            $i = 1;
+            
+            foreach ($squaresSecond as $square) : if ($square) :
+            ?>
+                <?php $isLastItem = $i === $lengthSecond; ?>
+                <div class="col-<?= strval($colSizeSecond) ?> project__gallery__square <?= wp_is_mobile() && !$isLastItem ? 'mb-5' : '' ?>">
+                    <?php if ($square['type'] === 'image') : ?>
+                        <img src="<?= $square['sizes']['medium'] ?>" alt="<?= $square['alt'] ?>" class="project__gallery__square__img" />
+                    <?php elseif ($square['type'] === 'video') : ?>
+                        <div class="project__gallery__square__vidcontainer">
+                            <video controls class="project__gallery__square__vidcontainer__vid">
+                                <source src="<?= $square['url'] ?>" type="<?= $square['mime_type'] ?>">
+                            </video>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <?php $i++; ?>
+            <?php endif; endforeach; ?>
+            </div>
+        </div>
+    <?php endif; ?>
+
+    <?php
+    $imagesThird = get_field('gallery_third');
+    if ($imagesThird) : foreach ($imagesThird as $image) : if ($image) :
+    ?>
+        <div id="projectImage--<?= $imgIndex; ?>" class="col-12 project__gallery__image my-4 px-0">
+            <img src="<?= $image['sizes']['large'] ?>" alt="<?= $image['alt'] ?>" class="project__gallery__image__img" />
+        </div>
+        <?php $imgIndex++; ?>
     <?php endif; endforeach; endif; ?>
     </div>
 

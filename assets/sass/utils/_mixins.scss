@@ -35,7 +35,7 @@
 
 @mixin home-img-show-transition-hover {
     opacity: 1;
-    transform: translateX(-25%);
+    transform: translateX(-10%);
 }
 
 @mixin img-cover {
@@ -123,6 +123,12 @@
 
 @mixin tablet-only {
     @media screen and (min-width: 768px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl-screen {
+    @media screen and (min-width: 2000px) {
         @content;
     }
 }

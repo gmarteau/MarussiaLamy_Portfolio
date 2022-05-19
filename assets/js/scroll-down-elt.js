@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    $('.scroll-down__elt').lettering();
+    if ($('.scroll-down__elt')) {
+        $('.scroll-down__elt').lettering();
+    }
 });

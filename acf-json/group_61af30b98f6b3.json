@@ -151,9 +151,165 @@
             "height": ""
         },
         {
+            "key": "field_62864ecadf240",
+            "label": "Video 16:9",
+            "name": "video_full",
+            "type": "file",
+            "instructions": "Fichier vidéo en 16:9",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".mp4,.mov,.avi"
+        },
+        {
+            "key": "field_62864f28df241",
+            "label": "Galerie 01",
+            "name": "gallery_first",
+            "type": "group",
+            "instructions": "Images en 16:9 (max 5)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62864f28df242",
+                    "label": "G1_Image 01",
+                    "name": "g1_image_01",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_62864f28df243",
+                    "label": "G1_Image 02",
+                    "name": "g1_image_02",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_62864f28df244",
+                    "label": "G1_Image 03",
+                    "name": "g1_image_03",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_62864f28df245",
+                    "label": "G1_Image 04",
+                    "name": "g1_image_04",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_62864f28df246",
+                    "label": "G1_Image 05",
+                    "name": "g1_image_05",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
             "key": "field_628524bd6ee36",
-            "label": "Carrés",
-            "name": "squares",
+            "label": "Carrés 01",
+            "name": "squares_first",
             "type": "group",
             "instructions": "Groupe de vidéos ou images au format carré (maximum 3)",
             "required": 0,
@@ -167,8 +323,8 @@
             "sub_fields": [
                 {
                     "key": "field_6285250b6ee37",
-                    "label": "Square 01",
-                    "name": "square_01",
+                    "label": "S1_Square 01",
+                    "name": "s1_square_01",
                     "type": "file",
                     "instructions": "Image ou vidéo",
                     "required": 0,
@@ -186,8 +342,8 @@
                 },
                 {
                     "key": "field_6285255a6ee38",
-                    "label": "Square 02",
-                    "name": "square_02",
+                    "label": "S1_Square 02",
+                    "name": "s1_square_02",
                     "type": "file",
                     "instructions": "",
                     "required": 0,
@@ -205,8 +361,219 @@
                 },
                 {
                     "key": "field_628525816ee39",
-                    "label": "Square 03",
-                    "name": "square_03",
+                    "label": "S1_Square 03",
+                    "name": "s1_square_03",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ".mp4,.avi,.mov,.png,.jpg,.jpeg,.gif"
+                }
+            ]
+        },
+        {
+            "key": "field_6286504ddf24c",
+            "label": "Galerie 02",
+            "name": "gallery_second",
+            "type": "group",
+            "instructions": "Images en 16:9 (max 5)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6286504ddf24d",
+                    "label": "G2_Image 01",
+                    "name": "g2_image_01",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6286504ddf24e",
+                    "label": "G2_Image 02",
+                    "name": "g2_image_02",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6286504ddf24f",
+                    "label": "G2_Image 03",
+                    "name": "g2_image_03",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6286504ddf250",
+                    "label": "G2_Image 04",
+                    "name": "g2_image_04",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6286504ddf251",
+                    "label": "G2_Image 05",
+                    "name": "g2_image_05",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_628650e0df252",
+            "label": "Carrés 02",
+            "name": "squares_second",
+            "type": "group",
+            "instructions": "Groupe de vidéos ou images au format carré (maximum 3)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_628650e0df253",
+                    "label": "S2_Square 01",
+                    "name": "s2_square_01",
+                    "type": "file",
+                    "instructions": "Image ou vidéo",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ".mp4,.avi,.mov,.png,.jpg,.jpeg,.gif"
+                },
+                {
+                    "key": "field_628650e0df254",
+                    "label": "S2_Square 02",
+                    "name": "s2_square_02",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ".mp4,.avi,.mov,.png,.jpg,.jpeg,.gif"
+                },
+                {
+                    "key": "field_628650e0df255",
+                    "label": "S2_Square 03",
+                    "name": "s2_square_03",
                     "type": "file",
                     "instructions": "",
                     "required": 0,
@@ -226,10 +593,10 @@
         },
         {
             "key": "field_61af31c00a68f",
-            "label": "Galerie",
-            "name": "gallery",
+            "label": "Galerie 03",
+            "name": "gallery_third",
             "type": "group",
-            "instructions": "",
+            "instructions": "Images en 16:9 (max 10)",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -241,8 +608,8 @@
             "sub_fields": [
                 {
                     "key": "field_61af31e90a690",
-                    "label": "Image 01",
-                    "name": "image_01",
+                    "label": "G3_Image 01",
+                    "name": "g3_image_01",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -265,19 +632,12 @@
                 },
                 {
                     "key": "field_61af32fe32771",
-                    "label": "Image 02",
-                    "name": "image_02",
+                    "label": "G3_Image 02",
+                    "name": "g3_image_02",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61af31e90a690",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -296,19 +656,12 @@
                 },
                 {
                     "key": "field_61af332d32772",
-                    "label": "Image 03",
-                    "name": "image_03",
+                    "label": "G3_Image 03",
+                    "name": "g3_image_03",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61af32fe32771",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -327,19 +680,12 @@
                 },
                 {
                     "key": "field_61af333e32773",
-                    "label": "Image 04",
-                    "name": "image_04",
+                    "label": "G3_Image 04",
+                    "name": "g3_image_04",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61af332d32772",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -358,19 +704,12 @@
                 },
                 {
                     "key": "field_61af335432774",
-                    "label": "Image 05",
-                    "name": "image_05",
+                    "label": "G3_Image 05",
+                    "name": "g3_image_05",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61af333e32773",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -389,19 +728,12 @@
                 },
                 {
                     "key": "field_61b75e94c5c99",
-                    "label": "Image_06",
-                    "name": "image_06",
+                    "label": "G3_Image_06",
+                    "name": "g3_image_06",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61af335432774",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -420,19 +752,12 @@
                 },
                 {
                     "key": "field_61b75eb1c5c9a",
-                    "label": "Image 07",
-                    "name": "image_07",
+                    "label": "G3_Image 07",
+                    "name": "g3_image_07",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61b75e94c5c99",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -451,19 +776,12 @@
                 },
                 {
                     "key": "field_61b75ec1c5c9b",
-                    "label": "Image 08",
-                    "name": "image_08",
+                    "label": "G3_Image 08",
+                    "name": "g3_image_08",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61b75eb1c5c9a",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -482,19 +800,12 @@
                 },
                 {
                     "key": "field_61b75eccc5c9c",
-                    "label": "Image 09",
-                    "name": "image_09",
+                    "label": "G3_Image 09",
+                    "name": "g3_image_09",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61b75ec1c5c9b",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -513,19 +824,12 @@
                 },
                 {
                     "key": "field_61b75edcc5c9d",
-                    "label": "Image 10",
-                    "name": "image_10",
+                    "label": "G3_Image 10",
+                    "name": "g3_image_10",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_61b75eccc5c9c",
-                                "operator": "!=empty"
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -563,5 +867,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652898824
+    "modified": 1652971690
 }

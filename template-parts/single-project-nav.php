@@ -1,4 +1,4 @@
-<ul class="single-project-nav py-5 px-0">
+<ul class="single-project-nav mt-5 py-5 px-0">
 <?php
 $categories = wp_get_nav_menu_items('categories');
 $i = 0;

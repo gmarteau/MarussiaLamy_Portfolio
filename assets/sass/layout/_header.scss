@@ -33,6 +33,26 @@
             color: $clr-active;
         }
     }
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        cursor: pointer;
+        z-index: 999;
+        &__bar {
+            background: $clr-txt;
+            min-height: 4px;
+            &:nth-of-type(1) {
+                margin: 0 0 4px;
+            }
+            &:nth-of-type(2) {
+                margin: 4px 0;
+            }
+            &:nth-of-type(3) {
+                margin: 4px 0 0;
+            }
+        }    
+    }
 }
 
 header {
@@ -60,6 +80,11 @@ header {
                     color: $clr-active;
                 }        
             }
+            &__icon {
+                &__bar {
+                    background-color: $clr-bg;
+                }
+            }
         }
     }
     &.single-project {
@@ -84,6 +109,11 @@ header {
                 &:active {
                     color: $clr-elements;
                 }        
+            }
+            &__icon {
+                &__bar {
+                    background-color: $clr-txt-dark;
+                }
             }
         }
     }
@@ -128,6 +158,11 @@ header {
                 &:active {
                     color: $clr-active;
                 }        
+            }
+            &__icon {
+                &__bar {
+                    background-color: $clr-txt-dark;
+                }
             }
         }
     }

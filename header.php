@@ -40,10 +40,14 @@
                         ?>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon navbar__icon">
+                            <span class="navbar__icon__bar"></span>
+                            <span class="navbar__icon__bar"></span>
+                            <span class="navbar__icon__bar"></span>
+                        </span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto d-flex align-items-end pt-3 pt-lg-0">
+                        <div class="navbar-nav ms-auto d-flex align-items-end pt-0">
                             <?php
                             $menuItems = wp_get_nav_menu_items('header');
                             if ($menuItems) :
