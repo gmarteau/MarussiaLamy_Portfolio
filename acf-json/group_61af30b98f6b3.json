@@ -119,6 +119,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_628ceb2e50065",
+            "label": "Crédits",
+            "name": "credits",
+            "type": "text",
+            "instructions": "Personnes à créditer sur le projet",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_628524726ee34",
             "label": "Vimeo",
             "name": "vimeo",
@@ -867,5 +886,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652971690
+    "modified": 1653402480
 }

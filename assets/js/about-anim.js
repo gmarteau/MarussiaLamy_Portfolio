@@ -20,6 +20,8 @@ if (typeof observer === 'undefined') {
     }
     observer.observe(document.querySelector('#aboutExpTitle'));
     observer.observe(document.querySelector('#aboutExpList'));
+    observer.observe(document.querySelector('#aboutSchoolTitle'));
+    observer.observe(document.querySelector('#aboutSchoolList'));
 } else {
     observer.observe(document.querySelector('#aboutTitle'));
     observer.observe(document.querySelector('#aboutName'));
@@ -34,4 +36,6 @@ if (typeof observer === 'undefined') {
     }
     observer.observe(document.querySelector('#aboutExpTitle'));
     observer.observe(document.querySelector('#aboutExpList'));
+    observer.observe(document.querySelector('#aboutSchoolTitle'));
+    observer.observe(document.querySelector('#aboutSchoolList'));
 }

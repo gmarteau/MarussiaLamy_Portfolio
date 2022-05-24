@@ -16,7 +16,18 @@
             <?= is_post_type_archive('project') ? 'archive' : ''; ?>
             <?= is_singular('project') ? 'single-project' : ''; ?>
         ">
-            <div class="banner-transition__logo d-flex justify-content-center align-items-center transition-swipe">maru</div>
+            <div class="banner-transition__logo d-flex justify-content-center align-items-center transition-swipe">
+                <?php
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                    
+                if ( has_custom_logo() ) {
+                    echo '<img class="navbar__brand__logo" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                } else {
+                    echo 'maru';
+                }
+                ?>
+            </div>
         </div>
 
         <header class="

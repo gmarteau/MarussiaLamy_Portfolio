@@ -52,8 +52,9 @@
             list-style: none;
             font-size: $font-reg;
             &__item {
-                &:not(.last) {
-                    border-bottom: solid 1px $clr-txt-dark;
+                border-bottom: solid 1px $clr-txt-dark;
+                &:nth-last-child(1) {
+                    border-bottom: none;
                 }
             }
         }

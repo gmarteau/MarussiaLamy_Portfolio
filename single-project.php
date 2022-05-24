@@ -36,10 +36,19 @@
                     <span class="col-6 d-block">Agence :</span>
                     <span class="col-6 d-block"><?= get_field('agency'); ?></span>
                 </li>
-                <li class="project__details__list__item last d-flex py-3">
+                <li class="project__details__list__item d-flex py-3">
                     <span class="col-6 d-block">Mon rôle :</span>
                     <span class="col-6 d-block"><?= get_field('role'); ?></span>
                 </li>
+                <?php
+                $credits = get_field('credits');
+                if ($credits) :
+                ?>
+                    <li class="project__details__list__item d-flex py-3">
+                        <span class="col-6 d-block">Crédits :</span>
+                        <span class="col-6 d-block"><?= $credits ?></span>
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>

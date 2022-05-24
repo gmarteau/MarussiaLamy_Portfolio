@@ -51,19 +51,42 @@
 
         <ul id="aboutExpList" class="col-12 col-lg-8 about__cv__list px-0 my-3 my-lg-5">
             <?php
-            $cvLines = get_field('cv');
+            $cvProLines = get_field('cv_pro');
             $experiences = [];
-            if ($cvLines) : foreach ($cvLines as $cvLine) : if ($cvLine && ($cvLine['title'] !== '')) :
-                $experiences[] = $cvLine;
+            if ($cvProLines) : foreach ($cvProLines as $cvProLine) : if ($cvProLine && ($cvProLine['title'] !== '')) :
+                $experiences[] = $cvProLine;
             endif; endforeach;
-            $numItems = count($experiences);
-            $i = 0;
+            $numItemsPro = count($experiences);
+            $iPro = 0;
             foreach ($experiences as $experience) :
             ?>
-            <li class="about__cv__list__item py-3 <?= (++$i == $numItems) ? 'last' : ''; ?> d-flex">
+            <li class="about__cv__list__item py-3 <?= (++$iPro == $numItemsPro) ? 'last' : ''; ?> d-flex">
                 <span class="col-6 pe-3 pe-lg-0"><?= $experience['title']; ?></span>
                 <span class="col-4 pe-3 pe-lg-0"><?= $experience['institution']; ?></span>
                 <span class="col-2 text-end ps-2 ps-lg-0"><?= $experience['date']; ?></span>
+            </li>
+            <?php endforeach; endif; ?>
+        </ul>
+
+        <div id="aboutSchoolTitle" class="col-12 col-lg-4 about__cv__title px-0 mt-5 mb-0 my-lg-5">
+            <h3>Mes formations</h3>
+        </div>
+
+        <ul id="aboutSchoolList" class="col-12 col-lg-8 about__cv__list px-0 my-3 my-lg-5">
+            <?php
+            $cvSchoolLines = get_field('cv_formation');
+            $formations = [];
+            if ($cvSchoolLines) : foreach ($cvSchoolLines as $cvSchoolLine) : if ($cvSchoolLine && ($cvSchoolLine['title'] !== '')) :
+                $formations[] = $cvSchoolLine;
+            endif; endforeach;
+            $numItemsSchool = count($formations);
+            $iSchool = 0;
+            foreach ($formations as $formation) :
+            ?>
+            <li class="about__cv__list__item py-3 <?= (++$iSchool == $numItemsSchool) ? 'last' : ''; ?> d-flex">
+                <span class="col-6 pe-3 pe-lg-0"><?= $formation['title']; ?></span>
+                <span class="col-4 pe-3 pe-lg-0"><?= $formation['institution']; ?></span>
+                <span class="col-2 text-end ps-2 ps-lg-0"><?= $formation['date']; ?></span>
             </li>
             <?php endforeach; endif; ?>
         </ul>
