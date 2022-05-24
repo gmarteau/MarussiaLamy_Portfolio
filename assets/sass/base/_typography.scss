@@ -10,6 +10,15 @@
     font-style: normal;
 }
 
+@font-face {font-family: "Helvetica Neue LT Pro";
+    src: url("https://db.onlinewebfonts.com/t/37eca625db586fe250cb8494b60fa092.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/37eca625db586fe250cb8494b60fa092.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/37eca625db586fe250cb8494b60fa092.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/37eca625db586fe250cb8494b60fa092.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/37eca625db586fe250cb8494b60fa092.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/37eca625db586fe250cb8494b60fa092.svg#Helvetica Neue LT Pro") format("svg"); /* iOS 4.1- */
+}
+
 * {
     font-family: 'Helvetica Neue LT Pro', Helvetica, sans-serif;
     &:not(h1, .home__category__link__content, .footer__contact__line, .contact__option__link, .about__hero__name) {

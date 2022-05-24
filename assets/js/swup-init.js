@@ -1,5 +1,5 @@
 const swup = new Swup({
-    cache: false,
+    cache: true,
     plugins: [new SwupScriptsPlugin({
         head: true,
         body: true
