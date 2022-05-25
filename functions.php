@@ -23,9 +23,8 @@ function marussialamy_support() {
 function marussialamy_register_assets() {
     wp_register_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
     wp_register_style('marussialamy-style', get_template_directory_uri() . '/style.css', ['bootstrap'], rand(111,9999), 'all');
-    wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js', [], false, true);
-    wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js', ['popper'], false, true);
     wp_register_script('jquery-min', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', [], false, true);
+    wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', ['jquery-min'], false, true);
     wp_register_script('jquery-lettering', get_template_directory_uri() . '/assets/js/jquery.lettering.min.js', ['jquery-min'], false, true);
     wp_register_script('page-checker', get_template_directory_uri() . '/assets/js/page-checker.js', [], false, true);
     wp_register_script('scroll-down-elt', get_template_directory_uri() . '/assets/js/scroll-down-elt.js', ['jquery-lettering'], false, true);
@@ -76,6 +75,10 @@ function marussialamy_handle_swup_scripts( $tag, $handle, $source ) {
     }
     if ( 'swup-init' === $handle ) {
         $tag = '<script type="text/javascript" src="' . $source . '" id="swup-init-js" data-swup-ignore-script=true></script>';
+        return $tag;
+    }
+    if ( 'bootstrap' === $handle ) {
+        $tag = '<script type="text/javascript" src="' . $source . '" id="bootstrap-js" data-swup-ignore-script=true async=false></script>';
         return $tag;
     }
     return $tag;

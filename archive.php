@@ -2,7 +2,7 @@
 
 <?php require_once('inc/archive-header-content.php'); ?>
 
-<div id="archiveHero" class="row archive__hero py-3">
+<div id="archiveHero" class="row archive__hero mt-lg-4 py-3">
     <div class="col-12 archive__hero__title d-flex justify-content-center align-items-center px-0 mb-0 mb-lg-5">
         <h1><?= $title ?></h1>
     </div>

@@ -22,7 +22,7 @@
                 $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
                     
                 if ( has_custom_logo() ) {
-                    echo '<img class="navbar__brand__logo" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                    echo '<img class="navbar__brand__logo--banner" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
                 } else {
                     echo 'maru';
                 }

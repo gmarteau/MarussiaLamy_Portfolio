@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post() ?>
-    <div class="row about__hero py-5 py-lg-3 d-flex flex-column align-items-center">
+    <div class="row about__hero mt-lg-4 py-5 py-lg-3 d-flex flex-column align-items-center">
         <h1 id="aboutTitle" class="col-12 about__hero__title px-0 m-0 text-center"><?= get_the_title(); ?></h1>
         <div class="col-12 col-lg-8 about__hero__thumbnail">
             <div class="about__hero__thumbnail__wrapper">
@@ -9,7 +9,7 @@
             </div>
             <?php get_template_part('template-parts/scroll-down'); ?>
         </div>
-        <h2 id="aboutName" class="col-12 about__hero__name px-0 m-0 text-center"><?= get_field('name'); ?></h2>
+        <h2 id="aboutName" class="col-12 about__hero__name pt-4 pt-lg-0 px-0 m-0 text-center"><?= get_field('name'); ?></h2>
     </div>
 
     <div class="row about__tagline py-3 py-lg-5">

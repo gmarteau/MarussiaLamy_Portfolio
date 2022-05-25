@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post() ?>
-    <ul class="row py-5 px-0 home">
+    <ul class="row mt-lg-4 py-5 px-0 home">
     <?php
     $categories = wp_get_nav_menu_items('categories');
     $i = 0;
@@ -17,6 +17,7 @@
                 </div>
             </a>
 
+            <?php if (!wp_is_mobile()) : ?>
             <a class="home__category__img" href="<?= $category->url; ?>">
                 <?php
                 $query = new WP_Query([
@@ -38,6 +39,7 @@
                 wp_reset_postdata();
                 ?>
             </a>
+            <?php endif; ?>
         </li>
         <?php $i++; ?>
     <?php endforeach; endif; ?>
