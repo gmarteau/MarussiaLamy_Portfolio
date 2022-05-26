@@ -75,7 +75,7 @@
     if ($videoFull) :
     ?>
         <div id="projectFullVid" class="col-12 project__gallery__embed my-4 px-0">
-            <video controls class="project__gallery__embed__vid">
+            <video autoplay loop muted playsinline controls class="project__gallery__embed__vid">
                 <source src="<?= $videoFull['url'] ?>" type="<?= $videoFull['mime_type'] ?>">
             </video>
         </div>
@@ -119,7 +119,7 @@
                         <img src="<?= $square['sizes']['medium'] ?>" alt="<?= $square['alt'] ?>" class="project__gallery__square__img" />
                     <?php elseif ($square['type'] === 'video') : ?>
                         <div class="project__gallery__square__vidcontainer">
-                            <video controls class="project__gallery__square__vidcontainer__vid">
+                            <video autoplay loop muted playsinline controls class="project__gallery__square__vidcontainer__vid">
                                 <source src="<?= $square['url'] ?>" type="<?= $square['mime_type'] ?>">
                             </video>
                         </div>
@@ -168,7 +168,7 @@
                         <img src="<?= $square['sizes']['medium'] ?>" alt="<?= $square['alt'] ?>" class="project__gallery__square__img" />
                     <?php elseif ($square['type'] === 'video') : ?>
                         <div class="project__gallery__square__vidcontainer">
-                            <video controls class="project__gallery__square__vidcontainer__vid">
+                            <video autoplay loop muted playsinline controls class="project__gallery__square__vidcontainer__vid">
                                 <source src="<?= $square['url'] ?>" type="<?= $square['mime_type'] ?>">
                             </video>
                         </div>
