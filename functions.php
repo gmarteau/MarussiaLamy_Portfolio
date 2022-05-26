@@ -81,6 +81,14 @@ function marussialamy_handle_swup_scripts( $tag, $handle, $source ) {
         $tag = '<script type="text/javascript" src="' . $source . '" id="bootstrap-js" data-swup-ignore-script=true async=false></script>';
         return $tag;
     }
+    if ( 'jquery-min' === $handle ) {
+        $tag = '<script type="text/javascript" src="' . $source . '" id="jquery-min-js" data-swup-ignore-script=true></script>';
+        return $tag;
+    }
+    if ( 'jquery-lettering' === $handle ) {
+        $tag = '<script type="text/javascript" src="' . $source . '" id="jquery-lettering-js" data-swup-ignore-script=true></script>';
+        return $tag;
+    }
     return $tag;
 }
 
