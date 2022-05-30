@@ -199,10 +199,25 @@
 
         <div id="otherProjectsSection" class="col-12 project__others__links px-0 pt-5 d-flex">
             <?php
+            $skills = get_the_terms(get_the_ID(), 'skill');
+            $slugs = array_map(function ($skill) {
+                if ($skill->slug) {
+                    return $skill->slug;
+                }
+            }, $skills);
+            $randomIndex = rand(0, count($slugs) - 1);
+
             $query = new WP_Query([
                 'post_type' => 'project',
                 'post__not_in' => [get_the_ID()],
-                'posts_per_page' => 2
+                'posts_per_page' => 2,
+                'tax_query' => [
+                    [
+                        'taxonomy' => 'skill',
+                        'field' => 'slug',
+                        'terms'=> $slugs[$randomIndex],
+                    ]
+                ]
             ]);
             $i = 1;
             while ($query->have_posts()) : $query->the_post();
