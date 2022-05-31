@@ -17,8 +17,7 @@
                 </div>
             </a>
 
-            <?php if (!wp_is_mobile()) : ?>
-            <a class="home__category__img" href="<?= $category->url; ?>">
+            <a class="home__category__img d-none d-lg-block" href="<?= $category->url; ?>">
                 <?php
                 $query = new WP_Query([
                     'post_type' => 'project',
@@ -39,7 +38,6 @@
                 wp_reset_postdata();
                 ?>
             </a>
-            <?php endif; ?>
         </li>
         <?php $i++; ?>
     <?php endforeach; endif; ?>

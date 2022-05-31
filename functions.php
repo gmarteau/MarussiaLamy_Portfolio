@@ -34,8 +34,10 @@ function marussialamy_register_assets() {
 
     if (is_singular('project')) {
         wp_register_script('single-project-anim', get_template_directory_uri() . '/assets/js/single-project-anim.js', [], false, true);
+        wp_register_script('vimeo', 'https://player.vimeo.com/api/player.js', [], false, true);
 
         wp_enqueue_script('single-project-anim');
+        wp_enqueue_script('vimeo');
     }
 
     if (is_archive()) {

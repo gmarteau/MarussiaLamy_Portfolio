@@ -14,6 +14,9 @@
         }
         &__logo {
             width: 100px;
+            @include mobile-only {
+                width: 75px;
+            }
             &--banner {
                 width: 250px;
             }
